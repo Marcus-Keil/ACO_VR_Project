@@ -25,18 +25,9 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.ide.visualstudio": {
-      "version": "2.0.9",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.test-framework": "1.1.9"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ide.vscode": {
-      "version": "1.2.3",
-      "depth": 0,
+    "com.unity.inputsystem": {
+      "version": "1.0.2",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -100,7 +91,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.27",
+      "version": "1.1.30",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -147,6 +138,19 @@
       "dependencies": {
         "com.unity.shadergraph": "10.5.1",
         "com.unity.render-pipelines.core": "10.5.1"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.interaction.toolkit": {
+      "version": "1.0.0-pre.6",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.inputsystem": "1.0.2",
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.xr.legacyinputhelpers": "2.1.7"
       },
       "url": "https://packages.unity.com"
     },

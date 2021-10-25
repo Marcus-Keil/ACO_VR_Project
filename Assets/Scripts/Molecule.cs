@@ -6,8 +6,8 @@ using UnityEngine;
 public class Molecule : MonoBehaviour
 {
     public Rigidbody rb;
-    private float K_b = 50.0f;
-    public float K_theta = 10.0f;
+    private float K_b = 100.0f;
+    public float K_theta = 50.0f;
     private float r_0 = 0.2f; // Also used for NonBondedForce
     private float BondDistance; // Distance at which the bonded force should affect the atoms
     private float epsilon = 10.0f;
@@ -30,6 +30,10 @@ public class Molecule : MonoBehaviour
     private void Update()
     {
         CheckDeath();
+        if (rb.useGravity && BondedMolecules.Count > 0)
+        {
+            rb.useGravity = false;
+        }
     }
 
     private void FixedUpdate()
@@ -87,29 +91,26 @@ public class Molecule : MonoBehaviour
         {
             if (this != molecule && BondedMolecules.Count < MaxBonds && !BondedMolecules.Contains(molecule))
             {
-                if (molecule.BondedMolecules.Contains(this) && this.tag != molecule.tag)
+                if (molecule.BondedMolecules.Contains(this))
                 {
-                    if (this.tag == "Hydrogen")
-                    {
-                        BondedMolecules.Add(molecule);
-                        if (molecule.tag == "Oxygen")
-                            rb.useGravity = false;
-                    }
-                    else if (this.tag == "Oxygen")
-                    {
-                        BondedMolecules.Add(molecule);
-                    }
-                }
-                else if (molecule.BondedMolecules.Contains(this) && this.tag == molecule.tag)
-                {
+                    rb.useGravity = false;
                     BondedMolecules.Add(molecule);
-                    MaxBonds = 1;
+                    if (this.tag == molecule.tag)
+                        MaxBonds = 1;
                 }
                 if (Distance_Calc(molecule.GetComponent<Transform>().position) <= BondDistance && molecule.BondedMolecules.Count < molecule.MaxBonds)
                 {
-                    BondedMolecules.Add(molecule);
-                    if (this.tag == "Hydrogen" && molecule.tag == "Oxygen")
+                    if (this.tag == molecule.tag && BondedMolecules.Count == 0)
+                    {
+                        BondedMolecules.Add(molecule);
                         rb.useGravity = false;
+                    }
+                    else if (this.tag != molecule.tag)
+                    {
+                        BondedMolecules.Add(molecule);
+                        rb.useGravity = false;
+                    }
+
                     if (this.tag == molecule.tag)
                         MaxBonds = 1;
                 }
