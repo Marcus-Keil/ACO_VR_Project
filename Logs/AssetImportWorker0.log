@@ -201,3 +201,728 @@ Received Import Request.
 Start importing Assets/XR/XRGeneralSettings.asset using Guid(1c405ba0d5e91d74599e211281f30b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc81f02bc983b9acf719aed87849acdd') in 0.012364 seconds 
   Import took 0.016809 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008326 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Instance of Samples.SampleLoader couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.ScriptableObject:CreateInstance (string)
+UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs:95)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:152)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:129)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs line 95]
+
+We were unable to create an instance of the requested type Samples.SampleLoader. Please make sure that all packages are updated to support this version of XR Plug-In Management. See the Unity documentation for XR Plug-In Management for information on resolving this issue.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs:108)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:152)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:129)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs Line: 108)
+
+Error creating instance of loader Sample Loader One  <SAMPLE ONLY YOU MUST REIMPLEMENT> for package Sample Package <SAMPLE ONLY YOU MUST REIMPLEMENT>
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:157)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:129)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs Line: 157)
+
+Instance of Samples.SampleLoader couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.ScriptableObject:CreateInstance (string)
+UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs:95)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:152)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:129)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs line 95]
+
+We were unable to create an instance of the requested type Samples.SampleLoader. Please make sure that all packages are updated to support this version of XR Plug-In Management. See the Unity documentation for XR Plug-In Management for information on resolving this issue.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs:108)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:152)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:129)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs Line: 108)
+
+Error creating instance of loader Sample Loader Two <SAMPLE ONLY YOU MUST REIMPLEMENT> for package Sample Package <SAMPLE ONLY YOU MUST REIMPLEMENT>
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeLoaderFromMetadata (string,System.Collections.Generic.List`1<UnityEditor.XR.Management.Metadata.IXRLoaderMetadata>) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:157)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:129)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs Line: 157)
+
+Instance of Samples.SampleSettings couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.ScriptableObject:CreateInstance (string)
+UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs:95)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeSettingsFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:183)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:130)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs line 95]
+
+We were unable to create an instance of the requested type Samples.SampleSettings. Please make sure that all packages are updated to support this version of XR Plug-In Management. See the Unity documentation for XR Plug-In Management for information on resolving this issue.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs:108)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeSettingsFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:183)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:130)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs Line: 108)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\GeneralStorage\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\GeneralStorage\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <44c3723143904fb88deebc993c7bb491>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.126 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1127ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (934ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (274ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (382ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 3217 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.1 MB.
+System memory in use after: 138.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3861.
+Total: 2.808700 ms (FindLiveObjects: 0.331800 ms CreateObjectMapping: 0.157600 ms MarkObjects: 2.259700 ms  DeleteObjects: 0.058400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010176 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\GeneralStorage\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\GeneralStorage\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <44c3723143904fb88deebc993c7bb491>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.346 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1346ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1142ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (338ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (462ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (139ms)
+				ProcessInitializeOnLoadAttributes (285ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Unloading 3216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3865.
+Total: 3.071400 ms (FindLiveObjects: 0.399300 ms CreateObjectMapping: 0.215900 ms MarkObjects: 2.435500 ms  DeleteObjects: 0.019600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 810.242769 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4923298d734c513a86da84d8066dcc') in 1.544104 seconds 
+  Import took 1.551497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.564573 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a043d8e8ebf216ee764d6bc790ec2244') in 0.026650 seconds 
+  Import took 0.033116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.396119 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03336439a8a40be7e904b5584a866baa') in 0.023528 seconds 
+  Import took 0.030371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.060110 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49297ee464b52bb3ffb38bdc8b1530d6') in 0.024492 seconds 
+  Import took 0.030617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.232265 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dee67ecc387776d3facdc8e17d489ae') in 0.024457 seconds 
+  Import took 0.031004 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.142712 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a8455e4eef40a8ea6627375a943574') in 0.023383 seconds 
+  Import took 0.029412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.799816 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b3e56a62aa80f52b3dd7735381ffbc') in 0.028102 seconds 
+  Import took 0.035551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.625318 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb36ecf0949dd3f376b32a352ca7a43') in 0.028971 seconds 
+  Import took 0.036729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.196119 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24779fe67b83215bc32c738d3d814df9') in 0.023777 seconds 
+  Import took 0.030993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.074714 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00844ab1fcc0c85a5f7c3f41413b432a') in 0.033255 seconds 
+  Import took 0.044204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.683133 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46ae5bd52cbf85854dac90c6f3a33f6') in 0.023190 seconds 
+  Import took 0.028947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.525040 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490f79640b6da7696404a76ef1a96939') in 0.066777 seconds 
+  Import took 0.072822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.719233 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f6551569268bcb71afb127666355cf') in 0.030533 seconds 
+  Import took 0.038638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.800658 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a87cd9b83eaf740c564ee6362451038') in 0.021001 seconds 
+  Import took 0.026939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.391612 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3edbcbfed715ec046fe271040bf6f063') in 0.048150 seconds 
+  Import took 0.054314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.565143 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90fc88229932fdc1002fd2b9aac7ac31') in 0.023441 seconds 
+  Import took 0.029753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.090413 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44c208119a516beb46ffac9b380c85f') in 0.021918 seconds 
+  Import took 0.028361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.918373 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74eaa9cfeb9cc0f85ef62227bd60e43c') in 0.023893 seconds 
+  Import took 0.030190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.554484 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b308126475bb248b27f058b639af80') in 0.034551 seconds 
+  Import took 0.040673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.381137 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0279afebad8e063b27be62169ea561b') in 0.022131 seconds 
+  Import took 0.027952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.596171 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7beee358afa5d842fcbf0c2b89486d63') in 0.022028 seconds 
+  Import took 0.029211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.218811 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd9dcf40fb0edadc84726832d29ba0b1') in 0.021160 seconds 
+  Import took 0.027475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.988579 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67168a9f15dd3438894caf3b62b8f736') in 0.021560 seconds 
+  Import took 0.027325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.987217 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa385bc6e776bdeb415999b0b04c70a') in 0.019793 seconds 
+  Import took 0.025807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.001500 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaaaa3d1d61800ce425441fbd36a9a0c') in 0.029080 seconds 
+  Import took 0.035236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.054078 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b734602c73d30d4e580111fa7cdbfd') in 0.021656 seconds 
+  Import took 0.027559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.803329 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee09c68afd96c0230fd41225d04b8dc') in 0.028019 seconds 
+  Import took 0.033984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.610502 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44e5be437d6dffb05293980828db616') in 0.022261 seconds 
+  Import took 0.028199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.391904 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffcb78d46db26f61c4b48fdbc9207bbf') in 0.018624 seconds 
+  Import took 0.024405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.193740 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c0bb0ef72dc1bae411758aeab0a0a6') in 0.021561 seconds 
+  Import took 0.027647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.396580 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc1e471488c9cfc98cac82f35b585f0') in 0.028709 seconds 
+  Import took 0.034596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.063912 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e9e4e6e857c399cb29cdb5a239f02cc') in 0.024835 seconds 
+  Import took 0.030977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.795533 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13e22acc314c34c96da00fd14e87ca5a') in 0.022781 seconds 
+  Import took 0.028939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.991718 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26b6df9e73a28c880051d7a90490224') in 0.022221 seconds 
+  Import took 0.028158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.385476 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b5fe37d2eb528c85a72ac634b693c7') in 0.021271 seconds 
+  Import took 0.027630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.836947 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45dd06fd46f9ad7697759c7d0cd56b4') in 0.024025 seconds 
+  Import took 0.029969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.790010 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f316dc3104d9f79b6e110e9ea052a4') in 0.021370 seconds 
+  Import took 0.027536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.194422 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388e47fb7013c6567a1722adc574e565') in 0.021547 seconds 
+  Import took 0.027800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.192884 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e906fcf7c6247b843eba2db8bd909029') in 0.021272 seconds 
+  Import took 0.027251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.998309 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91bc7c42941cf232b0f3896b55ecc23d') in 0.022110 seconds 
+  Import took 0.028553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.185886 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee9a1ca0ceca13552d14d8b7497e741') in 0.019964 seconds 
+  Import took 0.025858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.603585 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e6cfd20d9f0e1ff1ce683e67076547') in 0.025678 seconds 
+  Import took 0.031890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.051345 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791dedd83c64594fb0a1cf530b7e1f2e') in 0.026413 seconds 
+  Import took 0.032290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.214946 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab
+  artifactKey: Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/H_Dispenser.prefab using Guid(30d88f79e04855e40854f00aa95d670d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c7da5c2dbac79c06f57817d3c0937a') in 0.019880 seconds 
+  Import took 0.025571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.623962 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/O_Dispenser.prefab
+  artifactKey: Guid(ec1b0a99dc673784abdf83d5786741d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/O_Dispenser.prefab using Guid(ec1b0a99dc673784abdf83d5786741d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a628256bcb89c2ad6a9ff7df9e8c61') in 0.020804 seconds 
+  Import took 0.025987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.602903 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/O_Dispenser.prefab
+  artifactKey: Guid(ec1b0a99dc673784abdf83d5786741d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/O_Dispenser.prefab using Guid(ec1b0a99dc673784abdf83d5786741d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a3b8ced2a49969ba9b1bc5a9ae44ba') in 0.018414 seconds 
+  Import took 0.023777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.254357 seconds.
+  path: Assets/Prefabs/Scene_1_Molecules/O_Dispenser.prefab
+  artifactKey: Guid(ec1b0a99dc673784abdf83d5786741d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scene_1_Molecules/O_Dispenser.prefab using Guid(ec1b0a99dc673784abdf83d5786741d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6a37173cfb5a8dcaa4e30af0d7d544') in 0.011049 seconds 
+  Import took 0.016054 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\GeneralStorage\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\GeneralStorage\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <44c3723143904fb88deebc993c7bb491>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.136 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1136ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (950ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (378ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 3216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.3 MB.
+System memory in use after: 140.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3905.
+Total: 3.112000 ms (FindLiveObjects: 0.307000 ms CreateObjectMapping: 0.106700 ms MarkObjects: 2.680800 ms  DeleteObjects: 0.016400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
