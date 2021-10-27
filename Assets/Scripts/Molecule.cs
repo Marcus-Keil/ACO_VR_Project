@@ -15,6 +15,8 @@ public class Molecule : MonoBehaviour
     public int MaxBonds;
     public List<Molecule> BondedMolecules;
     public VR_Manager VR_Manager;
+    [SerializeField] private float magnitudeMax;
+    [SerializeField] private float vibMag;
 
     void Start()
     {
@@ -51,7 +53,9 @@ public class Molecule : MonoBehaviour
         {
             foreach (Molecule molecule in FindObjectsOfType<Molecule>())
             {
-                if (molecule.BondedMolecules.Count < molecule.MaxBonds && this != molecule)
+                if (molecule.BondedMolecules.Count < molecule.MaxBonds && this != molecule && this.tag != molecule.tag)
+                    NonBondAttract(molecule);
+                if (BondedMolecules.Count == 0 && molecule.BondedMolecules.Count == 0 && this != molecule && this.tag == molecule.tag)
                     NonBondAttract(molecule);
             }
         }
@@ -61,7 +65,12 @@ public class Molecule : MonoBehaviour
             {
                 BondAttract(BondMolecule);
             }
-        } 
+        }
+        rb.AddForce(new Vector3(vibMag * (Random.value * 2 - 1), vibMag * (Random.value * 2 - 1), vibMag * (Random.value * 2 - 1)));
+        if (rb.velocity.magnitude > magnitudeMax)
+        {
+            rb.AddForce(-rb.velocity.normalized * (rb.velocity.magnitude - magnitudeMax));
+        }
         
     }
 
@@ -100,19 +109,18 @@ public class Molecule : MonoBehaviour
                 }
                 if (Distance_Calc(molecule.GetComponent<Transform>().position) <= BondDistance && molecule.BondedMolecules.Count < molecule.MaxBonds)
                 {
-                    if (this.tag == molecule.tag && BondedMolecules.Count == 0)
+                    if (this.tag == molecule.tag && BondedMolecules.Count == 0 && molecule.BondedMolecules.Count == 0)
                     {
                         BondedMolecules.Add(molecule);
+                        MaxBonds = 1;
                         rb.useGravity = false;
+
                     }
                     else if (this.tag != molecule.tag)
                     {
                         BondedMolecules.Add(molecule);
                         rb.useGravity = false;
                     }
-
-                    if (this.tag == molecule.tag)
-                        MaxBonds = 1;
                 }
             }
         }
