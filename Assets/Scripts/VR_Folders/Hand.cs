@@ -47,11 +47,6 @@ public class Hand : MonoBehaviour
             triggerCurrent = Mathf.MoveTowards(triggerCurrent, triggerTarget, Time.deltaTime * triggerSpeed);
             animator.SetFloat(animatorTriggerParam, triggerCurrent);
         }
-        if (thumbCurrent != thumbTarget)
-        {
-            thumbCurrent = Mathf.MoveTowards(thumbCurrent, thumbTarget, Time.deltaTime * thumbSpeed);
-            animator.SetFloat(animatorThumbParam, thumbCurrent);
-        }
     }
 
     internal void SetGrip(float v)

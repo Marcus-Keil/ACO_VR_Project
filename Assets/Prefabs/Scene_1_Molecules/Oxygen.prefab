@@ -131,8 +131,8 @@ MonoBehaviour:
   MaxBonds: 0
   BondedMolecules: []
   VR_Manager: {fileID: 0}
-  magnitudeMax: 0.2
-  vibMag: 0.1
+  magnitudeMax: 0.5
+  vibMag: 0.75
 --- !u!114 &-4971629120108068367
 MonoBehaviour:
   m_ObjectHideFlags: 0
