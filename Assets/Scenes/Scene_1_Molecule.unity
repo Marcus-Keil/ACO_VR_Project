@@ -183,7 +183,6 @@ Transform:
   m_Children:
   - {fileID: 659288323}
   - {fileID: 1428072778}
-  - {fileID: 1828049355}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -976,7 +975,7 @@ PrefabInstance:
         type: 3}
       propertyPath: VR_Manager
       value: 
-      objectReference: {fileID: 1828049356}
+      objectReference: {fileID: 0}
     - target: {fileID: 8248723698467350602, guid: ec1b0a99dc673784abdf83d5786741d5,
         type: 3}
       propertyPath: parentObject
@@ -1189,52 +1188,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &1828049354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1828049355}
-  - component: {fileID: 1828049356}
-  m_Layer: 0
-  m_Name: VR_Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1828049355
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828049354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 275809906}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1828049356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828049354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bffa7c82d318404fa95c8f9e462e6a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GrabbableObjects: []
-  L_Controller: {fileID: 0}
-  R_Controller: {fileID: 0}
 --- !u!4 &1948314298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4459173907724276454, guid: 30d88f79e04855e40854f00aa95d670d,

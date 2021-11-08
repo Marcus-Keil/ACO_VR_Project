@@ -14,7 +14,6 @@ public class Molecule : MonoBehaviour
     private float DistanceModifier = 1.582f;
     public int MaxBonds;
     public List<Molecule> BondedMolecules;
-    public VR_Manager VR_Manager;
     [SerializeField] private float magnitudeMax;
     [SerializeField] private float vibMag;
 
@@ -26,7 +25,6 @@ public class Molecule : MonoBehaviour
             MaxBonds = 1;
         else if (this.tag == "Oxygen")
             MaxBonds = 2;
-        VR_Manager = GameObject.Find("VR_Manager").GetComponent<VR_Manager>();
     }
 
     private void Update()
@@ -137,7 +135,6 @@ public class Molecule : MonoBehaviour
                         molecule.BondedMolecules.Remove(this);
                 }
             }
-            VR_Manager.GrabbableObjects.Remove(gameObject);
             Destroy(gameObject);
         }
     }
