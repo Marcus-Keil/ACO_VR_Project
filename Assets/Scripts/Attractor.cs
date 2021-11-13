@@ -4,35 +4,62 @@ using UnityEngine;
 
 public class Attractor : MonoBehaviour
 {
-    public Rigidbody rb;
-    public Vector3 Kick;
-
+    private Rigidbody rb;
+    private float minDistance = 0.075f;
+    public bool Bondable;
+    public GameObject Bonder;
+    public CollisionManager CM;
+    private float ScaleMult = 0.0005f;
+    private float InitForce = 0.00001f;
 
     public void Start()
     {
-        rb.AddForce(Kick);
-    }
-
-    private void FixedUpdate()
-    {
-        Attractor[] attractors = FindObjectsOfType<Attractor>();
-        foreach(Attractor attractor in attractors)
+        rb = gameObject.GetComponent<Rigidbody>();
+        CM = GameObject.Find("CollisionManager").GetComponent<CollisionManager>();
+        CM.ObjectsToAttract.Add(this);
+        if (gameObject.CompareTag("Dust"))
         {
-            if (attractor != this)
-                Attract(attractor);
+            gameObject.transform.localScale = new Vector3(Random.Range(1, 101) * ScaleMult, Random.Range(1, 101) * ScaleMult, Random.Range(1, 101) * ScaleMult);
+            rb.mass = gameObject.transform.localScale.magnitude;
+            rb.AddForce(new Vector3(Random.Range(-100, 100), Random.Range(-100, 101), Random.Range(-100, 101)) * (Random.Range(1, 101)* InitForce));
+            rb.AddTorque(new Vector3(Random.Range(-100, 10), Random.Range(-100, 101), Random.Range(-100, 101)) * (Random.Range(1, 101) * InitForce));
         }
     }
 
-    void Attract (Attractor objToAttract)
+    private void Update()
     {
-        Rigidbody rbToAttract = objToAttract.rb;
+        CheckDeath();
+    }
 
-        Vector3 direction = rb.position - rbToAttract.position;
-        float distance = direction.magnitude;
+    private void CheckDeath()
+    {
+        if (Mathf.Abs(gameObject.transform.position.x) >= 20 || Mathf.Abs(gameObject.transform.position.y) >= 20 || Mathf.Abs(gameObject.transform.position.z) >= 20)
+            Destroy(gameObject);
+    }
 
-        float forceMagnitude = (rb.mass * rbToAttract.mass) / Mathf.Pow(distance, 2);
-        Vector3 force = direction.normalized * forceMagnitude;
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Dust") || collision.gameObject.CompareTag("Planetoid"))
+        {
+            if ((collision.gameObject.GetComponent<Attractor>().Bonder == null || collision.gameObject.GetComponent<Attractor>().Bonder == gameObject) && (Bonder == null || Bonder == collision.gameObject))
+            {
+                if (this != null && !CM.ObjectsToCombine.Contains(this))
+                {
+                    CM.ObjectsToCombine.Add(this);
+                    Bonder = collision.gameObject;
+                    Bondable = true;
+                }
+            }
+        }
+    }
 
-        rbToAttract.AddForce(force);
+    private void OnCollisionExit(Collision collision)
+    {
+        if (CM.ObjectsToCombine.Contains(this))
+        {
+            Bondable = false;
+            Bonder = null;
+            CM.ObjectsToCombine.Remove(this);
+        }
     }
 }

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.jimmycushnie.noisynodes": "https://github.com/JimmyCushnie/Noisy-Nodes.git",
     "com.unity.collab-proxy": "1.7.1",
     "com.unity.ide.rider": "2.0.7",
     "com.unity.polybrush": "1.0.2",
@@ -9,7 +10,7 @@
     "com.unity.timeline": "1.4.8",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualeffectgraph": "10.5.1",
-    "com.unity.xr.interaction.toolkit": "1.0.0-pre.6",
+    "com.unity.xr.interaction.toolkit": "1.0.0-pre.8",
     "com.unity.xr.management": "4.0.7",
     "com.unity.xr.oculus": "1.9.1",
     "com.unity.modules.ai": "1.0.0",

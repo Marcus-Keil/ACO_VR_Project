@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6303793725660067352}
   - component: {fileID: 5897535611018737240}
   - component: {fileID: -4879603363426985624}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hydrogen
   m_TagString: Hydrogen
   m_Icon: {fileID: 0}
@@ -130,7 +130,6 @@ MonoBehaviour:
   K_theta: 10
   MaxBonds: 0
   BondedMolecules: []
-  VR_Manager: {fileID: 0}
   magnitudeMax: 1
   vibMag: 0.5
 --- !u!114 &-4879603363426985624
@@ -149,7 +148,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 119
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:

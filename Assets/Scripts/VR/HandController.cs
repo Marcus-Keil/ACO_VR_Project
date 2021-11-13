@@ -8,6 +8,7 @@ public class HandController : MonoBehaviour
 {
     ActionBasedController controller;
     [SerializeField] Hand hand;
+
     // Start is called before the first frame update
     void Start()
     {

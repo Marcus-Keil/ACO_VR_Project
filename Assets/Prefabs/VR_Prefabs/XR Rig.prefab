@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2434678198914786079}
   - component: {fileID: 2434678198914786072}
   - component: {fileID: 2434678198914786078}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: XR Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 2434678199026681940}
   - component: {fileID: 2434678199026681941}
   - component: {fileID: 2434678199026681929}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2434678199294035370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,21 +273,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RightHand Controller
-      objectReference: {fileID: 0}
-    - target: {fileID: 3202045088791973016, guid: f58e79806c9c0a545803649b3bdaa299,
-        type: 3}
-      propertyPath: m_LineWidth
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 3202045088791973016, guid: f58e79806c9c0a545803649b3bdaa299,
-        type: 3}
-      propertyPath: m_LineLength
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3202045088791973016, guid: f58e79806c9c0a545803649b3bdaa299,
-        type: 3}
-      propertyPath: m_SmoothMovement
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3202045088791973017, guid: f58e79806c9c0a545803649b3bdaa299,
         type: 3}
@@ -352,7 +337,7 @@ PrefabInstance:
     - target: {fileID: 3202045088791973019, guid: f58e79806c9c0a545803649b3bdaa299,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.01
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7172763208816403580, guid: f58e79806c9c0a545803649b3bdaa299,
         type: 3}
@@ -374,6 +359,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2434678199294035370}
     m_Modifications:
+    - target: {fileID: 1773881298071409152, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5036219098740186912, guid: 361835831dfeab44e8b6bd30b3d39a26,
         type: 3}
       propertyPath: m_InteractionManager
@@ -383,6 +373,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MaxRaycastDistance
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5036219098740186916, guid: 361835831dfeab44e8b6bd30b3d39a26,
         type: 3}
@@ -444,25 +444,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5036219098740186918, guid: 361835831dfeab44e8b6bd30b3d39a26,
-        type: 3}
-      propertyPath: m_LineWidth
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5036219098740186918, guid: 361835831dfeab44e8b6bd30b3d39a26,
-        type: 3}
-      propertyPath: m_LineLength
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5036219098740186918, guid: 361835831dfeab44e8b6bd30b3d39a26,
-        type: 3}
-      propertyPath: m_SmoothMovement
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5036219098740186919, guid: 361835831dfeab44e8b6bd30b3d39a26,
         type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.01
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 5967341243758125114, guid: 361835831dfeab44e8b6bd30b3d39a26,
         type: 3}

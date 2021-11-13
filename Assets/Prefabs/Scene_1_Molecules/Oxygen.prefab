@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1023435014200546030}
   - component: {fileID: -6661635591918430021}
   - component: {fileID: -4971629120108068367}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Oxygen
   m_TagString: Oxygen
   m_Icon: {fileID: 0}
@@ -130,7 +130,6 @@ MonoBehaviour:
   K_theta: 10
   MaxBonds: 0
   BondedMolecules: []
-  VR_Manager: {fileID: 0}
   magnitudeMax: 0.5
   vibMag: 0.75
 --- !u!114 &-4971629120108068367
@@ -149,7 +148,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 119
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:

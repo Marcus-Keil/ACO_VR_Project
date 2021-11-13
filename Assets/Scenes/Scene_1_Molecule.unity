@@ -1378,6 +1378,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1997381526293778570, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997381526293778570, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2434678198343979407, guid: f911de48de5ef9e499a3e323ec66a7cc,
         type: 3}
       propertyPath: m_InteractionManager
@@ -1448,5 +1458,15 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 409274208}
+    - target: {fileID: 2434678200121887284, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529660179485542889, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f911de48de5ef9e499a3e323ec66a7cc, type: 3}
