@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1222933199707741694}
   - component: {fileID: 1222933199707741665}
   - component: {fileID: 1222933199707741664}
+  - component: {fileID: 3312308230890477828}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -191,3 +192,18 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3312308230890477828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222933199707741671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f3226c98c73174c851753cf69a7542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bondable: 0
+  Bonder: {fileID: 0}
+  CM: {fileID: 0}
