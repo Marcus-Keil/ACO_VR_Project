@@ -8,6 +8,7 @@ TagManager:
   - Hydrogen
   - Oxygen
   - Planetoid
+  - Grav
   layers:
   - Default
   - TransparentFX
