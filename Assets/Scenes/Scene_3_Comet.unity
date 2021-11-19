@@ -408,6 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ActiveComets: []
   AllAttractors: []
+  GravAttractors: []
   CometPrefab: {fileID: 968490221648098497, guid: 5ed48ed3783ebdf4598734a4f2e619da,
     type: 3}
   CometCollect: {fileID: 911454466}
@@ -1407,6 +1408,16 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7632555180495284486, guid: 83e9f5b3fb49fdd469eca1e42c2460c1,
+        type: 3}
+      propertyPath: m_Range
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632555180495284486, guid: 83e9f5b3fb49fdd469eca1e42c2460c1,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 4718
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83e9f5b3fb49fdd469eca1e42c2460c1, type: 3}
 --- !u!1001 &7187243969535593382
@@ -1426,6 +1437,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 988761555}
+    - target: {fileID: 4476845797746600673, guid: 5ed48ed3783ebdf4598734a4f2e619da,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4476845797746600673, guid: 5ed48ed3783ebdf4598734a4f2e619da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1459,6 +1475,21 @@ PrefabInstance:
     - target: {fileID: 4476845797746600673, guid: 5ed48ed3783ebdf4598734a4f2e619da,
         type: 3}
       propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476845797746600673, guid: 5ed48ed3783ebdf4598734a4f2e619da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476845797746600673, guid: 5ed48ed3783ebdf4598734a4f2e619da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476845797746600673, guid: 5ed48ed3783ebdf4598734a4f2e619da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

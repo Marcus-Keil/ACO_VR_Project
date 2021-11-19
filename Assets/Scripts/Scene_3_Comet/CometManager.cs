@@ -8,6 +8,7 @@ public class CometManager : MonoBehaviour
 {
     public List<Attractor_Grav> ActiveComets;
     public List<Attractor_Grav> AllAttractors;
+    public List<Attractor_Grav> GravAttractors;
     private int MaximumComets = 10;
     public GameObject CometPrefab;
     public GameObject CometCollect;
@@ -15,31 +16,26 @@ public class CometManager : MonoBehaviour
     private bool CometDeletePressed = false;
     private bool CometSpawnPressed = false;
 
+    private void Start()
+    {
+        
+    }
 
     private void Update()
     {
         var inputDevices = new List<UnityEngine.XR.InputDevice>();
         UnityEngine.XR.InputDevices.GetDevices(inputDevices);
-        Debug.Log(inputDevices);
-        if (inputDevices[1].TryGetFeatureValue(UnityEngine.XR.CommonUsages.primaryButton, out bool DelPressed))
-        {
-            if (CometDeletePressed != DelPressed)
-            {
-                CometDeletePressed = DelPressed;
-                if (CometDeletePressed)
-                {
-                    DestroyComet();
-                }
-            }
-        }
-        if (inputDevices[2].TryGetFeatureValue(UnityEngine.XR.CommonUsages.secondaryButton, out bool SpawnPressed))
+        if (inputDevices[1].TryGetFeatureValue(UnityEngine.XR.CommonUsages.secondaryButton, out bool SpawnPressed))
         {
             if (CometSpawnPressed != SpawnPressed)
             {
                 CometSpawnPressed = SpawnPressed;
                 if (CometSpawnPressed)
                 {
-                    SpawnComet();
+                    if (ActiveComets.Count < MaximumComets)
+                        SpawnComet();
+                    else
+                        DestroyComet();
                 }
             }
         }
@@ -47,26 +43,17 @@ public class CometManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        foreach (Attractor_Grav obj in AllAttractors)
+        foreach (Attractor_Grav obj in GravAttractors)
         {
-            if (obj == null)
-            {
-                AllAttractors.Remove(obj);
-                break;
-            }
-            else
-            {
-                obj.Attract();
-            }
+            obj.Attract();
         }
     }
 
     public void SpawnComet()
     {
-        if (ActiveComets.Count <= MaximumComets)
+        if (ActiveComets.Count < MaximumComets)
         {
             GameObject C = Instantiate<GameObject>(CometPrefab, Vector3.zero, Quaternion.identity);
-            ActiveComets.Add(C.GetComponent<Attractor_Grav>());
             C.transform.position = CometCollect.transform.position;
             C.transform.parent = CometCollect.transform;
         }
@@ -74,11 +61,19 @@ public class CometManager : MonoBehaviour
 
     public void DestroyComet()
     {
-        foreach(Attractor_Grav Com in ActiveComets)
+        Attractor_Grav Com = ActiveComets[0];
+        if (Com != null)
         {
             Destroy(Com.gameObject);
+            AllAttractors.Remove(Com);
             ActiveComets.Remove(Com);
-            break;
+            SpawnComet();
         }
+        else
+        {
+            ActiveComets.Remove(Com);
+            AllAttractors.Remove(Com);
+        }
+
     }
 }

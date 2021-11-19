@@ -24,6 +24,8 @@ public class Attractor_Grav : MonoBehaviour
         CM = FindObjectOfType<CometManager>();
         if (IsComet)
             CM.ActiveComets.Add(this);
+        else
+            CM.GravAttractors.Add(this);
         CM.AllAttractors.Add(this);
     }
     private void Update()
@@ -37,7 +39,12 @@ public class Attractor_Grav : MonoBehaviour
         {
             foreach (Attractor_Grav attractor in CM.AllAttractors)
             {
-                if (attractor != this && attractor.Active)
+                if(attractor == null)
+                {
+                    CM.AllAttractors.Remove(attractor);
+                    break;
+                }
+                else if (attractor != this && attractor.Active)
                 {
                     Rigidbody rbToAttract = attractor.rb;
 
