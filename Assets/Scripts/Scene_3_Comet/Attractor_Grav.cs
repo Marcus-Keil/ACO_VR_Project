@@ -14,8 +14,6 @@ public class Attractor_Grav : MonoBehaviour
 
     const float G = 667.4f;
 
-    public List<Attractor_Grav> Attractors;
-
     public Rigidbody rb;
 
 
@@ -26,54 +24,36 @@ public class Attractor_Grav : MonoBehaviour
         CM = FindObjectOfType<CometManager>();
         if (IsComet)
             CM.ActiveComets.Add(this);
+        CM.AllAttractors.Add(this);
     }
     private void Update()
     {
         CheckDeath();
     }
-    void FixedUpdate()
+
+    public void Attract()
     {
         if (Active)
         {
-            foreach (Attractor_Grav attractor in Attractors)
+            foreach (Attractor_Grav attractor in CM.AllAttractors)
             {
                 if (attractor != this && attractor.Active)
-                    Attract(attractor);
+                {
+                    Rigidbody rbToAttract = attractor.rb;
+
+                    Vector3 direction = rb.position - rbToAttract.position;
+                    float distance = direction.magnitude;
+
+                    if (distance == 0f)
+                        return;
+
+                    float forceMagnitude = (G * (rb.mass * rbToAttract.mass)) / Mathf.Pow(distance, 2);
+                    Vector3 force = direction.normalized * forceMagnitude;
+
+                    rbToAttract.AddForce(force);
+                }
             }
-        }
-    }
-
-    void OnEnable()
-    {
-        if (Attractors == null)
-            Attractors = new List<Attractor_Grav>();
-        Attractor_Grav[] TempObs = FindObjectsOfType<Attractor_Grav>();
-        foreach (Attractor_Grav att in TempObs)
-        {
-            if (att != this)
-                Attractors.Add(att);
-        }
-    }
-
-    void Attract(Attractor_Grav objToAttract)
-    {
-        if (objToAttract == null)
-        {
-            Attractors.Remove(objToAttract);
-            return;
-        }
-        Rigidbody rbToAttract = objToAttract.rb;
-
-        Vector3 direction = rb.position - rbToAttract.position;
-        float distance = direction.magnitude;
-
-        if (distance == 0f)
-            return;
-
-        float forceMagnitude = (G * (rb.mass * rbToAttract.mass)) / Mathf.Pow(distance, 2);
-        Vector3 force = direction.normalized * forceMagnitude;
-
-        rbToAttract.AddForce(force);
+        }        
     }
 
     private void CheckDeath()
