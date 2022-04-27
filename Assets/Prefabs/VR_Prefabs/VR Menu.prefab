@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 4345901671892151092}
   - component: {fileID: 4345901671892151093}
   - component: {fileID: 4345901671892151094}
+  - component: {fileID: 1357847000}
   m_Layer: 0
   m_Name: Scene 2 btn
   m_TagString: Untagged
@@ -275,7 +276,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4345901671892151094}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: ReleaseHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -324,6 +337,19 @@ MonoBehaviour:
   Scene: Scene_2_Dust
   img: {fileID: 4345901671892151091}
   panel: {fileID: 4345901671892151048}
+--- !u!65 &1357847000
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4345901671892151048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 97, y: 30, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4345901671926706135
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +626,7 @@ GameObject:
   - component: {fileID: 4345901672608826912}
   - component: {fileID: 4345901672608826913}
   - component: {fileID: 4345901672608826914}
+  - component: {fileID: 105261771}
   m_Layer: 0
   m_Name: Scene 3 btn
   m_TagString: Untagged
@@ -780,7 +807,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4345901672608826914}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: ReleaseHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -829,6 +868,19 @@ MonoBehaviour:
   Scene: Scene_3_Comet
   img: {fileID: 4345901672608826927}
   panel: {fileID: 4345901672608826916}
+--- !u!65 &105261771
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4345901672608826916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 97, y: 30, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4345901673005165442
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +974,7 @@ GameObject:
   - component: {fileID: 4345901673059836700}
   - component: {fileID: 4345901673059836701}
   - component: {fileID: 4345901673059836702}
+  - component: {fileID: 411377753}
   m_Layer: 0
   m_Name: Scene 1 btn
   m_TagString: Untagged
@@ -1102,7 +1155,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4345901673059836702}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: ReleaseHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -1151,6 +1216,19 @@ MonoBehaviour:
   Scene: Scene_1_Molecule
   img: {fileID: 4345901673059836699}
   panel: {fileID: 4345901673059836688}
+--- !u!65 &411377753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4345901673059836688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 97, y: 30, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4345901673145043229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,14 +1320,13 @@ GameObject:
   - component: {fileID: 4345901673290957507}
   - component: {fileID: 4345901673290957508}
   - component: {fileID: 4345901673290957509}
-  - component: {fileID: 4345901673290957510}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4345901673290957511
 Transform:
   m_ObjectHideFlags: 0
@@ -1258,7 +1335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4345901673290957528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.62, z: 0.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4345901672398122712}
@@ -1327,24 +1404,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4345901673290957510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4345901673290957528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 1
-  m_PoseSource: 4
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 0
 --- !u!1 &4345901673490343749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,6 +1418,7 @@ GameObject:
   - component: {fileID: 4345901673490343745}
   - component: {fileID: 4345901673490343746}
   - component: {fileID: 4345901673490343747}
+  - component: {fileID: 44194077}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -1539,7 +1599,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4345901673490343747}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: ReleaseHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -1588,6 +1660,19 @@ MonoBehaviour:
   Scene: Exit
   img: {fileID: 4345901673490343744}
   panel: {fileID: 4345901673490343749}
+--- !u!65 &44194077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4345901673490343749}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 97, y: 30, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4345901673602216369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,6 +1682,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4345901673602216368}
+  - component: {fileID: 1419273581}
+  - component: {fileID: 1419273583}
   m_Layer: 0
   m_Name: VR Menu
   m_TagString: Untagged
@@ -1613,13 +1700,39 @@ Transform:
   m_GameObject: {fileID: 4345901673602216369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1658775, y: 0.1658775, z: 0.1658775}
   m_Children:
   - {fileID: 4345901673290957511}
   - {fileID: 4345901673693048100}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1419273581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4345901673602216369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9cf03e539ea156439fea8f3ac39e14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1419273583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4345901673602216369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017c5e3933235514c9520e1dace2a4b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ActionAssets:
+  - {fileID: 0}
 --- !u!1 &4345901673693048101
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,19 +12,18 @@ public class CometManager : MonoBehaviour
     private int MaximumComets = 10;
     public GameObject CometPrefab;
     public GameObject CometCollect;
+    private List<UnityEngine.XR.InputDevice> inputDevices;
 
     private bool CometDeletePressed = false;
     private bool CometSpawnPressed = false;
 
     private void Start()
     {
-        
+        UnityEngine.XR.InputDevices.GetDevices(inputDevices);
     }
 
     private void Update()
-    {
-        var inputDevices = new List<UnityEngine.XR.InputDevice>();
-        UnityEngine.XR.InputDevices.GetDevices(inputDevices);
+    {        
         if (inputDevices[1].TryGetFeatureValue(UnityEngine.XR.CommonUsages.secondaryButton, out bool SpawnPressed))
         {
             if (CometSpawnPressed != SpawnPressed)
