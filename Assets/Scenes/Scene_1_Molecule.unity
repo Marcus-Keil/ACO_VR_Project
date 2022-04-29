@@ -131,7 +131,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &46946201
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -144,6 +144,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -180,6 +181,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 659288323}
   - {fileID: 1428072778}
@@ -224,6 +226,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1760392692}
   - {fileID: 1948314298}
@@ -405,6 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1123007430}
   - component: {fileID: 1123007429}
+  - component: {fileID: 1123007431}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -484,10 +488,31 @@ Transform:
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0.57, y: 4.36, z: -0.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &1123007431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123007428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &1292612453
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +539,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2035070752}
   - {fileID: 52971890}
@@ -621,6 +647,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1536005939}
   - {fileID: 1292612454}
@@ -653,6 +680,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1301648968}
   m_Father: {fileID: 1428072778}
@@ -1089,6 +1117,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.952, z: 0.483}
   m_LocalScale: {x: 0.78, y: 0.59, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 659288323}
   m_RootOrder: 3
@@ -1118,6 +1147,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1171,7 +1201,7 @@ MonoBehaviour:
   GoalMat: {fileID: 2100000, guid: 7a53803466012c24d8f43db84aa1cfa3, type: 2}
 --- !u!95 &1825359030
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1184,6 +1214,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -1235,6 +1266,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 659288323}
   m_RootOrder: 2
@@ -1264,6 +1296,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1378,6 +1411,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1966618336764386752, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1966618336764386752, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1966618336764386752, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1966618336764386752, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1997381526293778570, guid: f911de48de5ef9e499a3e323ec66a7cc,
         type: 3}
       propertyPath: m_UseGravity
@@ -1387,6 +1440,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434678198343979406, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_Id
+      value: 08e928ae-bdb0-4924-b91d-cf9550273798
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434678198343979406, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_Action.m_Id
+      value: 702cb3da-8e41-4704-ba29-ec61c04baf1e
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434678198343979406, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_Action.m_Id
+      value: 9c29de73-b1da-4e5a-95bd-2f0d78c98b4b
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434678198343979406, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_Name
+      value: Select Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434678198343979406, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_TrackingStateAction.m_Action.m_Id
+      value: a1268da9-8f0f-480c-baec-a5409541e284
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434678198343979406, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_Action.m_Name
+      value: UI Press Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434678198343979406, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_Action.m_Name
+      value: Activate Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434678198343979406, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_TrackingStateAction.m_Action.m_Name
+      value: Tracking State
       objectReference: {fileID: 0}
     - target: {fileID: 2434678198343979407, guid: f911de48de5ef9e499a3e323ec66a7cc,
         type: 3}
@@ -1463,10 +1556,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3353591817976860348, guid: f911de48de5ef9e499a3e323ec66a7cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3353591817977025180, guid: f911de48de5ef9e499a3e323ec66a7cc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6244050695275147172, guid: f911de48de5ef9e499a3e323ec66a7cc,
         type: 3}

@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.07, y: 0.01, z: -0.838}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2434678199294035370}
   m_Father: {fileID: 0}
@@ -45,13 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7448815bd5148434682b3d931066cd10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RigBaseGameObject: {fileID: 2434678198914786073}
+  m_Camera: {fileID: 0}
+  m_OriginBaseGameObject: {fileID: 2434678198914786073}
   m_CameraFloorOffsetObject: {fileID: 2434678199294035371}
-  m_CameraGameObject: {fileID: 2434678199026681942}
   m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.36144
-  m_TrackingSpace: 3
-  m_TrackingOriginMode: -2147483648
+  m_CameraGameObject: {fileID: 2434678199026681942}
 --- !u!114 &2434678198914786078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,6 +96,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2434678199294035370}
   m_RootOrder: 0
@@ -165,6 +166,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TrackingType: 0
   m_UpdateType: 0
+  m_PositionInput:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Main Camera - TPD - Position
+      m_Type: 0
+      m_ExpectedControlType: Vector3
+      m_Id: fed9098c-547f-464d-90bf-6d3326a9ba1f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 765faa2e-14f4-4939-b33a-61bfa86befce
+        m_Path: <XRHMD>/centerEyePosition
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Main Camera - TPD - Position
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_RotationInput:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Main Camera - TPD - Rotation
+      m_Type: 0
+      m_ExpectedControlType: Quaternion
+      m_Id: 8bab3728-5dd6-439e-a468-d46c6b14a82d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 0fb98fb3-f6b0-4e33-8b80-1aac2565ee80
+        m_Path: <XRHMD>/centerEyeRotation
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Main Camera - TPD - Rotation
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   m_PositionAction:
     m_Name: Main Camera - TPD - Position
     m_Type: 0
@@ -181,6 +222,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Main Camera - TPD - Position
       m_Flags: 0
+    m_Flags: 0
   m_RotationAction:
     m_Name: Main Camera - TPD - Rotation
     m_Type: 0
@@ -197,6 +239,8 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Main Camera - TPD - Rotation
       m_Flags: 0
+    m_Flags: 0
+  m_HasMigratedActions: 1
 --- !u!114 &2434678199026681929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +263,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -255,6 +300,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2434678199026681930}
   - {fileID: 2434678198343979402}
@@ -383,6 +429,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ModelPrefab
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_Id
+      value: 30687176-c60b-4282-8366-8c046727b8ce
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_Action.m_Id
+      value: bad2e2cf-0e2c-4529-a7db-c5bf4f1c38a9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_Action.m_Id
+      value: 2756d3f6-105b-4e9f-bebe-a7d0338faf48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_Name
+      value: Select Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_TrackingStateAction.m_Action.m_Id
+      value: a100c26d-2698-467d-9927-04d93c66b6d2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_Action.m_Name
+      value: UI Press Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_Action.m_Name
+      value: Activate Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036219098740186913, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_TrackingStateAction.m_Action.m_Name
+      value: Tracking State
       objectReference: {fileID: 0}
     - target: {fileID: 5036219098740186916, guid: 361835831dfeab44e8b6bd30b3d39a26,
         type: 3}
