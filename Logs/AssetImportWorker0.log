@@ -15,7 +15,7 @@ G:/Unity/ACO_VR_Project/ACO_VR_Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55909
+50467
 Successfully changed project path to: G:/Unity/ACO_VR_Project/ACO_VR_Project
 G:/Unity/ACO_VR_Project/ACO_VR_Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,8 +47,8 @@ G:/Unity/ACO_VR_Project/ACO_VR_Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 78.36 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 1.22 ms.
+Refreshing native plugins compatible for Editor in 100.22 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.88 ms.
 Initialize engine version: 2021.3.1f1 (3b70a0754835)
 [Subsystems] Discovering subsystems at path E:/Program Files/Unity/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path G:/Unity/ACO_VR_Project/ACO_VR_Project/Assets
@@ -59,58 +59,58 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     8010 MB
     Driver:   30.0.15.1259
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
 Mono path[0] = 'E:/Program Files/Unity/2021.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Program Files/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Program Files/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Program Files/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: E:/Program Files/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015458 seconds.
+Registered in 0.017070 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 69.94 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.25 ms.
+Refreshing native plugins compatible for Editor in 99.96 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.22 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.707 seconds
+- Completed reload, in  0.778 seconds
 Domain Reload Profiling:
-	ReloadAssembly (708ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (779ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (474ms)
-			LoadAssemblies (106ms)
+		EndReloadAssembly (516ms)
+			LoadAssemblies (118ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (108ms)
+			SetupTypeCache (116ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (282ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (312ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (65ms)
+				InitializePlatformSupportModulesInManaged (62ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (70ms)
+				RefreshPlugins (100ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (98ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
+				ProcessInitializeOnLoadAttributes (105ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006564 seconds.
-Android Extension - Scanning For ADB Devices 5561 ms
+Registered in 0.007198 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 64.05 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
+Refreshing native plugins compatible for Editor in 97.24 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
 Package Manager log level set to [2]
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
@@ -128,510 +128,44 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.481 seconds
+- Completed reload, in  1.841 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1482ms)
-		BeginReloadAssembly (173ms)
+	ReloadAssembly (1842ms)
+		BeginReloadAssembly (265ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1158ms)
-			LoadAssemblies (162ms)
+			CreateAndSetChildDomain (126ms)
+		EndReloadAssembly (1454ms)
+			LoadAssemblies (391ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (299ms)
+			SetupTypeCache (271ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (96ms)
-			SetupLoadedEditorAssemblies (589ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (64ms)
-				BeforeProcessingInitializeOnLoad (99ms)
-				ProcessInitializeOnLoadAttributes (314ms)
-				ProcessInitializeOnLoadMethodAttributes (75ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.44 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 4720 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (434.4 KB). Loaded Objects now: 5188.
-Memory consumption went from 200.1 MB to 199.7 MB.
-Total: 3.916100 ms (FindLiveObjects: 0.383300 ms CreateObjectMapping: 0.306600 ms MarkObjects: 2.964700 ms  DeleteObjects: 0.260600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 29158.479352 seconds.
-  path: Assets/Resources/RightHand.mb
-  artifactKey: Guid(006fece1787316e41bddbfe47931b7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/RightHand.mb using Guid(006fece1787316e41bddbfe47931b7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a9fa518083e531e17fb3711059c6124') in 0.356870 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 147.346567 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315d7d4cd65d52f8942efbdf7fee2659') in 0.057699 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Prefabs/VR_Prefabs/XR Rig.prefab
-  artifactKey: Guid(f911de48de5ef9e499a3e323ec66a7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/XR Rig.prefab using Guid(f911de48de5ef9e499a3e323ec66a7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3682505ccca2c8864ea676d5f4fb2c6a') in 0.053823 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.819398 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d07d52910d479c55e4c046c897fbd99') in 0.037530 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.966479 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00536c330e19984b5acc46f9f3f50c9') in 0.036119 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.335471 seconds.
-  path: Assets/Materials/Controller_Line.mat
-  artifactKey: Guid(4e67eb17736886a4ea4e3269b960c539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Controller_Line.mat using Guid(4e67eb17736886a4ea4e3269b960c539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27606c58c55be7bb086c79127267882') in 0.380866 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.303277 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f739d16df7b144a15192d5c5c9d69373') in 0.039699 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.238665 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba0940a9df0ece026056aaf9c136d2c') in 0.036758 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.523336 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27df5fe8bd5f106c3f80f4a5c2831e06') in 0.037653 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.569736 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '792df2796851a8309d6e17b10053f962') in 0.036897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.258245 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641ec0429f7d2e6451b3a14085d2c120') in 0.041080 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.029114 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628c0b49f9f79614d7caa822b1b42f0d') in 0.038198 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.801824 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2410af6ec25dce45033d9038cd5da4ed') in 0.044392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.212414 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632af8cef26f256c8bbea30f63c82d3f') in 0.043572 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.554499 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6d73d55225a556845c8c291c6662f2') in 0.039761 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.371443 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba75865117ab0a1049f707c9133ab765') in 0.042501 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.367562 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '508e36666fe5619d3dda4643c8abfc4f') in 0.041804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.165348 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5321faabe2e43b99dbaab5c262d5201d') in 0.039390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.387140 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9683085e21e3b30c9ab3773ae8bee9de') in 0.042563 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.167412 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748598e1c453d214ade2aa71e281e2a0') in 0.043275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.577648 seconds.
-  path: Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab
-  artifactKey: Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/VR_Prefabs/LeftHand Controller.prefab using Guid(361835831dfeab44e8b6bd30b3d39a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af85186af9d95f8a63a5ac752b558f8') in 0.039923 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006281 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.43 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.528 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1529ms)
-		BeginReloadAssembly (197ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (1213ms)
-			LoadAssemblies (160ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (300ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (106ms)
-			SetupLoadedEditorAssemblies (606ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (29ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (326ms)
-				ProcessInitializeOnLoadMethodAttributes (98ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.74 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 4579 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (411.2 KB). Loaded Objects now: 5280.
-Memory consumption went from 227.6 MB to 227.2 MB.
-Total: 4.780700 ms (FindLiveObjects: 0.319700 ms CreateObjectMapping: 0.230200 ms MarkObjects: 3.910500 ms  DeleteObjects: 0.319400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005156 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.668 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1669ms)
-		BeginReloadAssembly (190ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1352ms)
-			LoadAssemblies (165ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (323ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (121ms)
-			SetupLoadedEditorAssemblies (681ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (32ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (379ms)
-				ProcessInitializeOnLoadMethodAttributes (105ms)
-				AfterProcessingInitializeOnLoad (24ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.53 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 4579 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (410.0 KB). Loaded Objects now: 5284.
-Memory consumption went from 227.5 MB to 227.1 MB.
-Total: 7.804300 ms (FindLiveObjects: 0.505500 ms CreateObjectMapping: 1.084300 ms MarkObjects: 5.607500 ms  DeleteObjects: 0.606000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005293 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.537 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1538ms)
-		BeginReloadAssembly (181ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1236ms)
-			LoadAssemblies (160ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (309ms)
-			ReleaseScriptCaches (3ms)
 			RebuildScriptCaches (101ms)
-			SetupLoadedEditorAssemblies (620ms)
+			SetupLoadedEditorAssemblies (678ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (28ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (137ms)
-				ProcessInitializeOnLoadAttributes (349ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (342ms)
 				ProcessInitializeOnLoadMethodAttributes (85ms)
 				AfterProcessingInitializeOnLoad (19ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.81 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 4579 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (410.0 KB). Loaded Objects now: 5288.
-Memory consumption went from 227.5 MB to 227.1 MB.
-Total: 5.193800 ms (FindLiveObjects: 0.342500 ms CreateObjectMapping: 0.223500 ms MarkObjects: 4.336200 ms  DeleteObjects: 0.290600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.08 ms, found 5 plugins.
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.76 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (416.1 KB). Loaded Objects now: 5288.
-Memory consumption went from 119.1 MB to 118.7 MB.
-Total: 3.777300 ms (FindLiveObjects: 0.351700 ms CreateObjectMapping: 0.254700 ms MarkObjects: 2.848000 ms  DeleteObjects: 0.321700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004938 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.279 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2280ms)
-		BeginReloadAssembly (208ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1922ms)
-			LoadAssemblies (196ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (358ms)
-			ReleaseScriptCaches (5ms)
-			RebuildScriptCaches (121ms)
-			SetupLoadedEditorAssemblies (1184ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (31ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (859ms)
-				ProcessInitializeOnLoadMethodAttributes (119ms)
-				AfterProcessingInitializeOnLoad (30ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.63 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 4579 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (411.0 KB). Loaded Objects now: 5292.
-Memory consumption went from 227.5 MB to 227.1 MB.
-Total: 4.702300 ms (FindLiveObjects: 0.313900 ms CreateObjectMapping: 0.186700 ms MarkObjects: 3.920200 ms  DeleteObjects: 0.280700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.34 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (407.6 KB). Loaded Objects now: 5292.
-Memory consumption went from 119.1 MB to 118.7 MB.
-Total: 3.938600 ms (FindLiveObjects: 0.333300 ms CreateObjectMapping: 0.241900 ms MarkObjects: 3.051500 ms  DeleteObjects: 0.310800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.77 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (415.5 KB). Loaded Objects now: 5292.
-Memory consumption went from 119.1 MB to 118.7 MB.
-Total: 4.976400 ms (FindLiveObjects: 0.335600 ms CreateObjectMapping: 0.210700 ms MarkObjects: 4.133000 ms  DeleteObjects: 0.296300 ms)
+Unloading 5762 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (0.5 MB). Loaded Objects now: 6218.
+Memory consumption went from 244.4 MB to 243.8 MB.
+Total: 3.668800 ms (FindLiveObjects: 0.474900 ms CreateObjectMapping: 0.375000 ms MarkObjects: 2.513700 ms  DeleteObjects: 0.304300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -645,50 +179,32 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1425.496347 seconds.
-  path: Assets/Scenes/Scene_2_Dust.unity
-  artifactKey: Guid(d70a84655f53406409ae911d2a2bebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Scene_2_Dust.unity using Guid(d70a84655f53406409ae911d2a2bebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c682321c540094ba832a2aa65aceb9') in 0.400651 seconds 
+  Time since last request: 95142.101253 seconds.
+  path: Assets/Scenes/Scene_1_Molecule.unity
+  artifactKey: Guid(04db53f1c26542e49984109fad0e2e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene_1_Molecule.unity using Guid(04db53f1c26542e49984109fad0e2e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1add65b2e68ba3c285eae096d5cbbb') in 0.028096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.412255 seconds.
+  path: Assets/Oculus/OculusProjectConfig.asset
+  artifactKey: Guid(7339bb75476ad0847b282a09f6d381d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/OculusProjectConfig.asset using Guid(7339bb75476ad0847b282a09f6d381d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19acc71c462be96d114691351fd7aa6d') in 0.053184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.148154 seconds.
+  path: Assets/Oculus/SampleFramework
+  artifactKey: Guid(4adcf71f3cb5afa4cb8d17c9c5e038b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework using Guid(4adcf71f3cb5afa4cb8d17c9c5e038b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3379a05ffd1f3db8de7aca2c67f41f8a') in 0.020368 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006891 seconds.
+Registered in 0.005416 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 1.04 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
@@ -705,40 +221,41 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  4.983 seconds
+- Completed reload, in  1.400 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4984ms)
-		BeginReloadAssembly (2073ms)
+	ReloadAssembly (1400ms)
+		BeginReloadAssembly (166ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (2787ms)
-			LoadAssemblies (2265ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1124ms)
+			LoadAssemblies (142ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (381ms)
+			SetupTypeCache (279ms)
 			ReleaseScriptCaches (3ms)
 			RebuildScriptCaches (108ms)
-			SetupLoadedEditorAssemblies (1639ms)
+			SetupLoadedEditorAssemblies (579ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (305ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (197ms)
-				ProcessInitializeOnLoadAttributes (914ms)
-				ProcessInitializeOnLoadMethodAttributes (200ms)
-				AfterProcessingInitializeOnLoad (21ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (322ms)
+				ProcessInitializeOnLoadMethodAttributes (88ms)
+				AfterProcessingInitializeOnLoad (25ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.48 ms, found 5 plugins.
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 2.39 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 4579 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (417.6 KB). Loaded Objects now: 5296.
-Memory consumption went from 227.5 MB to 227.1 MB.
-Total: 3.373400 ms (FindLiveObjects: 0.339900 ms CreateObjectMapping: 0.212100 ms MarkObjects: 2.533300 ms  DeleteObjects: 0.286700 ms)
+Unloading 5427 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (410.0 KB). Loaded Objects now: 6222.
+Memory consumption went from 242.3 MB to 241.9 MB.
+Total: 3.559900 ms (FindLiveObjects: 0.388400 ms CreateObjectMapping: 0.258100 ms MarkObjects: 2.663800 ms  DeleteObjects: 0.248600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -753,107 +270,13 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.010640 seconds.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
+Registered in 0.005866 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 1.09 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
-Assembly with name 'Unity.XR.Management.Samples.Editor' already exists (Assets/Samples/XR Plugin Management/4.2.1/Example XR Management implementation/Editor/Unity.XR.Management.Samples.Editor.asmdef)
-Assembly with name 'Unity.XR.Management.Samples.Editor' already exists (Assets/Samples/XR Plugin Management/4.0.7/Example XR Management implementation/Editor/Unity.XR.Management.Samples.Editor.asmdef)
-Assembly with name 'Unity.XR.Management.Samples' already exists (Assets/Samples/XR Plugin Management/4.2.1/Example XR Management implementation/Unity.XR.Management.Samples.asmdef)
-Assembly with name 'Unity.XR.Management.Samples' already exists (Assets/Samples/XR Plugin Management/4.0.7/Example XR Management implementation/Unity.XR.Management.Samples.asmdef)
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <1e18c5a6594041c9844bfd0b6618ee4a>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1135c66e5f4c41a7831fa5798849d8b6>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:257 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Unity\ACO_VR_Project\ACO_VR_Project\Library\PackageCache\com.unity.xr.oculus@3.0.1\Runtime\OculusLoader.cs:242 
@@ -870,40 +293,81 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.633 seconds
+- Completed reload, in  1.459 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1634ms)
-		BeginReloadAssembly (189ms)
+	ReloadAssembly (1460ms)
+		BeginReloadAssembly (165ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1313ms)
-			LoadAssemblies (232ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1182ms)
+			LoadAssemblies (145ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (369ms)
+			SetupTypeCache (321ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (102ms)
-			SetupLoadedEditorAssemblies (584ms)
+			RebuildScriptCaches (107ms)
+			SetupLoadedEditorAssemblies (587ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (35ms)
+				InitializePlatformSupportModulesInManaged (24ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (285ms)
-				ProcessInitializeOnLoadMethodAttributes (102ms)
-				AfterProcessingInitializeOnLoad (22ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (320ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
+				AfterProcessingInitializeOnLoad (24ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.83 ms, found 5 plugins.
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 2.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 5427 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (409.9 KB). Loaded Objects now: 6226.
+Memory consumption went from 242.6 MB to 242.2 MB.
+Total: 4.416800 ms (FindLiveObjects: 0.404600 ms CreateObjectMapping: 0.317600 ms MarkObjects: 3.414500 ms  DeleteObjects: 0.279100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 7.27 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 4579 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (416.6 KB). Loaded Objects now: 5300.
-Memory consumption went from 227.7 MB to 227.3 MB.
-Total: 3.565800 ms (FindLiveObjects: 0.356700 ms CreateObjectMapping: 0.286900 ms MarkObjects: 2.606000 ms  DeleteObjects: 0.315300 ms)
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (407.7 KB). Loaded Objects now: 6226.
+Memory consumption went from 117.2 MB to 116.8 MB.
+Total: 3.568500 ms (FindLiveObjects: 0.526100 ms CreateObjectMapping: 0.287200 ms MarkObjects: 2.484700 ms  DeleteObjects: 0.269700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 14.42 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (407.4 KB). Loaded Objects now: 6226.
+Memory consumption went from 117.2 MB to 116.8 MB.
+Total: 3.835700 ms (FindLiveObjects: 0.397600 ms CreateObjectMapping: 0.272600 ms MarkObjects: 2.904400 ms  DeleteObjects: 0.260400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
