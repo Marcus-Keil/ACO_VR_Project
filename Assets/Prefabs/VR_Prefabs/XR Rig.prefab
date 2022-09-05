@@ -390,7 +390,9 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 006fece1787316e41bddbfe47931b7e8, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8669360804822384401, guid: f58e79806c9c0a545803649b3bdaa299, type: 3}
+    - {fileID: 8749353224413104498, guid: f58e79806c9c0a545803649b3bdaa299, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f58e79806c9c0a545803649b3bdaa299, type: 3}
 --- !u!4 &2434678200121887275 stripped
 Transform:
@@ -405,10 +407,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2434678199294035370}
     m_Modifications:
+    - target: {fileID: 550413131982277288, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: hand
+      value: 
+      objectReference: {fileID: 1250026619686215700}
     - target: {fileID: 1773881298071409152, guid: 361835831dfeab44e8b6bd30b3d39a26,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992484017770432789, guid: 361835831dfeab44e8b6bd30b3d39a26,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5036219098740186912, guid: 361835831dfeab44e8b6bd30b3d39a26,
         type: 3}
@@ -542,6 +554,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 361835831dfeab44e8b6bd30b3d39a26, type: 3}
+--- !u!1 &1153207762854610810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8371219893167589845, guid: 361835831dfeab44e8b6bd30b3d39a26,
+    type: 3}
+  m_PrefabInstance: {fileID: 7218575836752645807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1250026619686215700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153207762854610810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d114da005f5ecb41902b159cfcb6683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gripSpeed: 0
+  triggerSpeed: 0
+  thumbSpeed: 0
 --- !u!4 &2434678198343979402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5036219098740186917, guid: 361835831dfeab44e8b6bd30b3d39a26,

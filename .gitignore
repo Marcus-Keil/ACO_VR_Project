@@ -39,3 +39,5 @@ sysinfo.txt
 # Imported Samples
 Assets/Samples
 Assets/EffectExamples
+ExportBuild/
+ExportBuild_BurstDebugInformation_DoNotShip/

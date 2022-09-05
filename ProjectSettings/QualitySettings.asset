@@ -21,11 +21,11 @@ QualitySettings:
     skinWeights: 4
     textureQuality: 0
     anisotropicTextures: 2
-    antiAliasing: 0
+    antiAliasing: 2
     softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 1
-    billboardsFaceCameraPosition: 0
+    billboardsFaceCameraPosition: 1
     vSyncCount: 0
     lodBias: 2
     maximumLODLevel: 0
@@ -40,7 +40,7 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 0e1e98583101aa84881f2f9403cdafac,
+    customRenderPipeline: {fileID: 11400000, guid: 33201ebe3ac06ed4b9c0404a8a7dd1c7,
       type: 2}
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
@@ -50,6 +50,7 @@ QualitySettings:
     Nintendo Switch: 0
     PS4: 0
     PSP2: 0
+    Server: 0
     Stadia: 0
     Standalone: 0
     WebGL: 0

@@ -1,38 +1,75 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class VR_Menu : MonoBehaviour
 {
     private GameObject menu_cube;
 
-    private List<UnityEngine.XR.InputDevice> inputDevices;
+    private InputDevice _RightController;
+    private InputDevice _LeftController;
+    private List<InputDevice> inputDevices = new List<InputDevice>();
     bool MenuButtonPressed = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         menu_cube = transform.Find("Cube").gameObject;
-        inputDevices = new List<UnityEngine.XR.InputDevice>();
-        UnityEngine.XR.InputDevices.GetDevices(inputDevices);
+        TryInitialize();
+    }
+
+    void TryInitialize()
+    {
+        InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, inputDevices);
+
+        foreach (var device in inputDevices)
+        {
+            Debug.Log(string.Format("Device found with name '{0}' and role '{1}'", device.name, device.role.ToString()));
+        }
+
+        if (inputDevices.Count == 0)
+        {
+            return;
+        }
+        _RightController = inputDevices[0];
+
+        InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
+        InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, inputDevices);
+
+        foreach (var device in inputDevices)
+        {
+            Debug.Log(string.Format("Device found with name '{0}' and role '{1}'", device.name, device.role.ToString()));
+        }
+
+        if (inputDevices.Count == 0)
+        {
+            return;
+        }
+        _LeftController = inputDevices[0];
     }
 
     void Update()
     {
-        if (inputDevices[1].TryGetFeatureValue(UnityEngine.XR.CommonUsages.menuButton, out bool MenuPressed) && MenuPressed)
+        if (!_RightController.isValid || !_LeftController.isValid)
         {
-            if (!MenuButtonPressed)
+            TryInitialize();
+        }
+        else
+        {
+            if (_LeftController.TryGetFeatureValue(UnityEngine.XR.CommonUsages.menuButton, out bool MenuPressed) && MenuPressed)
             {
-                MenuButtonPressed = true;
-                ToggleMenu();
+                if (!MenuButtonPressed)
+                {
+                    MenuButtonPressed = true;
+                    ToggleMenu();
+                }
+            }
+            else if (_LeftController.TryGetFeatureValue(UnityEngine.XR.CommonUsages.menuButton, out bool MenuNotPressed) && !MenuNotPressed)
+            {
+                MenuButtonPressed = false;
             }
         }
-        else if (inputDevices[1].TryGetFeatureValue(UnityEngine.XR.CommonUsages.menuButton, out bool MenuNotPressed) && !MenuNotPressed)
-        {
-            MenuButtonPressed = false;
-        }
-
-
     }
 
     public void ToggleMenu()

@@ -234,6 +234,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 3202045090188889699}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -572,43 +573,6 @@ Transform:
   m_Father: {fileID: 3202045088791973017}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6741937043365400703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 006fece1787316e41bddbfe47931b7e8,
-    type: 3}
-  m_PrefabInstance: {fileID: 5859541369770126638}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6258873913655675589}
-  - component: {fileID: 8669360804822384401}
-  - component: {fileID: 8749353224413104498}
-  - component: {fileID: 7172763208816403580}
-  - component: {fileID: 3582925089047461649}
-  m_Layer: 0
-  m_Name: 'RightHand (Missing Prefab with guid: 006fece1787316e41bddbfe47931b7e8)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6258873913655675589
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 006fece1787316e41bddbfe47931b7e8,
-    type: 3}
-  m_PrefabInstance: {fileID: 5859541369770126638}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6741937043365400703}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3202045088791973017}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5859541369770126638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -878,6 +842,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 006fece1787316e41bddbfe47931b7e8, type: 3}
+--- !u!4 &6258873913655675589 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 006fece1787316e41bddbfe47931b7e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5859541369770126638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6741937043365400703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 006fece1787316e41bddbfe47931b7e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5859541369770126638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &8669360804822384401
 Rigidbody:
   m_ObjectHideFlags: 0

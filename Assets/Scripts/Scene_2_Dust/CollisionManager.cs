@@ -14,6 +14,7 @@ public class CollisionManager : MonoBehaviour
     private GameObject dustParentObject;
     public GameObject DustPrefab;
 
+    public SecondTimerScript TimerTxt;
     public GameObject G_Center;
     public GameObject S_Center;
     private float ForceMagnitude = 0.005f;
@@ -36,19 +37,28 @@ public class CollisionManager : MonoBehaviour
     void Update()
     {
         CheckLife();
-        foreach (Attractor Obj in ObjectsToCombine)
+        if (TimerTxt.TimerOn)
         {
-            if (Obj != null)
+            foreach (Attractor Obj in ObjectsToCombine)
             {
-                if (Obj.Bonder.gameObject.GetComponent<Attractor>() != null)
+                if (Obj != null)
                 {
-                    if (Obj.Bonder.gameObject.GetComponent<Attractor>().Bonder == Obj.gameObject && Obj.Bonder.gameObject.GetComponent<Attractor>().Bondable)
+                    if (Obj.Bonder.gameObject.GetComponent<Attractor>() != null)
                     {
-                        ObjectsToAttract.Remove(Obj);
-                        ObjectsToAttract.Remove(Obj.Bonder.gameObject.GetComponent<Attractor>());
+                        if (Obj.Bonder.gameObject.GetComponent<Attractor>().Bonder == Obj.gameObject && Obj.Bonder.gameObject.GetComponent<Attractor>().Bondable)
+                        {
+                            ObjectsToAttract.Remove(Obj);
+                            ObjectsToAttract.Remove(Obj.Bonder.gameObject.GetComponent<Attractor>());
+                            ObjectsToCombine.Remove(Obj);
+                            ObjectsToCombine.Remove(Obj.Bonder.gameObject.GetComponent<Attractor>());
+                            Combine(Obj.gameObject, Obj.Bonder.gameObject);
+                            break;
+                        }
+                    }
+                    else
+                    {
                         ObjectsToCombine.Remove(Obj);
                         ObjectsToCombine.Remove(Obj.Bonder.gameObject.GetComponent<Attractor>());
-                        Combine(Obj.gameObject, Obj.Bonder.gameObject);
                         break;
                     }
                 }
@@ -58,12 +68,6 @@ public class CollisionManager : MonoBehaviour
                     ObjectsToCombine.Remove(Obj.Bonder.gameObject.GetComponent<Attractor>());
                     break;
                 }
-            }
-            else
-            {
-                ObjectsToCombine.Remove(Obj);
-                ObjectsToCombine.Remove(Obj.Bonder.gameObject.GetComponent<Attractor>());
-                break;
             }
         }
     }
