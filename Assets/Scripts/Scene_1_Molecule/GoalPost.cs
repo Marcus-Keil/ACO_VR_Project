@@ -23,7 +23,6 @@ public class GoalPost : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        StartCoroutine(WaitCouroutine());
     }
 
     private void Update()
@@ -47,6 +46,7 @@ public class GoalPost : MonoBehaviour
                     Score.GetComponent<WaterScoreScript>().ScoreUpdate();
                     GoalAudio.pitch = UnityEngine.Random.Range(0.8f, 1.1f);
                     GoalAudio.Play();
+                    otherMol.InitiateDeath();
                 }
             }
 

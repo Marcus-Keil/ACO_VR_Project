@@ -17,10 +17,12 @@ public class CollisionManager : MonoBehaviour
     public SecondTimerScript TimerTxt;
     public GameObject G_Center;
     public GameObject S_Center;
+    public float minRad = 1.0f;
+    public float maxRad = 3.0f;
     private float ForceMagnitude = 0.005f;
     private float DustSpawnRadius = 0.5f;
     private float MoveRadius = 2.5f;
-    private int MaximumDust = 1000;
+    private int MaximumDust = 300;
     private int itteration = 0;
 
     // Start is called before the first frame update
@@ -88,7 +90,7 @@ public class CollisionManager : MonoBehaviour
 
     private void MoveToPoint(GameObject C, GameObject Mov)
     {
-        
+
         Rigidbody MovRB = Mov.GetComponent<Rigidbody>();
         Vector3 direction = C.transform.position - Mov.transform.position;
         if (direction.magnitude < MoveRadius && MovRB.mass >= 0.2f)
@@ -99,7 +101,7 @@ public class CollisionManager : MonoBehaviour
         {
             MovRB.AddForce(direction * ForceMagnitude * 10);
         }
-        
+
     }
 
     public void Combine(GameObject First, GameObject Second)
@@ -107,7 +109,7 @@ public class CollisionManager : MonoBehaviour
         Vector3 FirstPosition = First.gameObject.transform.localPosition;
         Vector3 FirstScale = First.gameObject.transform.localScale;
         float FirstMass = First.gameObject.GetComponent<Rigidbody>().mass;
-        
+
 
         Vector3 SecondPosition = Second.gameObject.transform.localPosition;
         Vector3 SecondScale = Second.gameObject.transform.localScale;
@@ -130,7 +132,7 @@ public class CollisionManager : MonoBehaviour
 
         GameObject p = Instantiate<GameObject>(PlanetoidPrefab, MidPosition, Rot);
 
-        
+
         switch (GetMinIndex(Scale))
         {
             case 0:
@@ -145,7 +147,7 @@ public class CollisionManager : MonoBehaviour
         }
         p.transform.localScale = Scale;
         p.transform.parent = planetoidParentObject.transform;
-        
+
         p.GetComponent<Rigidbody>().mass = FirstMass + SecondMass;
         p.GetComponent<Rigidbody>().velocity = Velocity;
         p.GetComponent<Rigidbody>().angularVelocity = AngVelocity;
@@ -155,12 +157,10 @@ public class CollisionManager : MonoBehaviour
     {
         if (ObjectsToAttract.Count < MaximumDust && itteration < UnityEngine.Random.Range(10, 51))
             itteration += 1;
-        else
+        else if (ObjectsToAttract.Count < MaximumDust)
         {
             itteration = 0;
-            Vector3 SpawnLocation = UnityEngine.Random.onUnitSphere * DustSpawnRadius + S_Center.gameObject.transform.position;
-            GameObject d = Instantiate(DustPrefab, SpawnLocation, Quaternion.identity);
-            d.transform.parent = dustParentObject.transform;
+            Spawn();
         }
     }
 
@@ -168,12 +168,29 @@ public class CollisionManager : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            Vector3 Spawn = UnityEngine.Random.insideUnitSphere * DustSpawnRadius;
-            Spawn.y += DustSpawnRadius;
-            Spawn += S_Center.transform.position;
-            GameObject d = Instantiate(DustPrefab, Spawn, Quaternion.identity);
-            d.transform.parent = dustParentObject.transform;
+            Spawn();
         }
+    }
+
+    private void Spawn()
+    {
+        float rxS = UnityEngine.Random.Range(0, 2) * 2 - 1;
+        float rx =  rxS * UnityEngine.Random.Range(0.01f, 1.0f);
+        float ryS = UnityEngine.Random.Range(0, 2) * 2 - 1;
+        float ry = ryS * UnityEngine.Random.Range(0.01f, 1.0f);
+        float rzS = UnityEngine.Random.Range(0, 2) * 2 - 1;
+        float rz = rzS * UnityEngine.Random.Range(0.01f, 1.0f);
+        Vector3 angle = new Vector3(rx, ry, rz);
+        float radius = minRad + UnityEngine.Random.Range(0.0f, 1.0f) * (maxRad - minRad);
+
+        Vector3 rpos = angle * radius;
+        rpos += S_Center.transform.position;
+
+        //Vector3 Spawn = UnityEngine.Random.insideUnitSphere * DustSpawnRadius;
+        //Spawn.y += DustSpawnRadius;
+        //Spawn += S_Center.transform.position;
+        GameObject d = Instantiate(DustPrefab, rpos, Quaternion.identity);
+        d.transform.parent = dustParentObject.transform;
     }
 
     private int GetMinIndex(Vector3 vec)

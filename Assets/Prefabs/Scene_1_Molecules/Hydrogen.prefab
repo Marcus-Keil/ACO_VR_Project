@@ -132,6 +132,9 @@ MonoBehaviour:
   K_theta: 10
   MaxBonds: 0
   BondedMolecules: []
+  DissolveTime: 0.01
+  MyMaterial: {fileID: 2100000, guid: d8a5df4385eff3140832eb14d8989f23, type: 2}
+  MyShader: {fileID: 0}
   magnitudeMax: 1
   vibMag: 0.5
 --- !u!114 &-4879603363426985624
@@ -153,6 +156,7 @@ MonoBehaviour:
     m_Bits: 119
   m_InteractionLayers:
     m_Bits: 119
+  m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -213,6 +217,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 2
   m_MovementType: 0
   m_VelocityDamping: 1

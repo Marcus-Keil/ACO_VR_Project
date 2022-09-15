@@ -24,7 +24,7 @@ public class Attractor_Grav : MonoBehaviour
     private void Start()
     {
         rb.AddForce(Kick);
-        rb.AddTorque(Rotation);
+        rb.AddRelativeTorque(Rotation);
         GM = FindObjectOfType<GameManager>();
         CM = FindObjectOfType<CometManager>();
         if (IsComet)
@@ -39,7 +39,13 @@ public class Attractor_Grav : MonoBehaviour
     }
     private void Update()
     {
+        CheckIndex();
         CheckDeath();
+    }
+
+    private void CheckIndex()
+    {
+        MyIndex = CM.ActiveComets.IndexOf(this);
     }
 
     public void Attract()
@@ -76,12 +82,11 @@ public class Attractor_Grav : MonoBehaviour
     {
         if (IsComet && other.gameObject.name == "Earth")
         {
-            GM.AnimateEarth(MyIndex, this);
+            GM.AnimateEarth(MyIndex, this.gameObject);
         }
         else if (IsComet && other.gameObject.name == "Sun")
         {
-            CreatePoof();
-            CM.DestroyComet(MyIndex);
+            GM.SunPoof(MyIndex, this.gameObject);
         }
     }
 
@@ -89,7 +94,7 @@ public class Attractor_Grav : MonoBehaviour
     {
         if (Mathf.Abs(gameObject.transform.position.magnitude) >= MaxDistance)
         {
-            CM.DestroyComet(MyIndex);
+            GM.DestroyComet(MyIndex);
         }
     }
 

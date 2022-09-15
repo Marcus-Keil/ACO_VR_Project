@@ -29,26 +29,37 @@ public class GameManager : MonoBehaviour
         defaultTimeScale = Time.timeScale;
     }
 
-    public void AnimateEarth(int MyIndex, Attractor_Grav comet)
+    public void DestroyComet(int MyIndex)
+    {
+        CM.DestroyComet(MyIndex);
+    }
+
+    public void SunPoof(int MyIndex, GameObject comet)
+    {
+        comet.GetComponent<Attractor_Grav>().CreatePoof();
+        CM.DestroyComet(MyIndex);
+    }
+
+    public void AnimateEarth(int MyIndex, GameObject comet)
     {
         StartCoroutine(ExampleCoroutine(MyIndex, comet));
     }
 
-    IEnumerator ExampleCoroutine(int MyIndex, Attractor_Grav comet)
+    IEnumerator ExampleCoroutine(int MyIndex, GameObject comet)
     {
         Screen.gameObject.SetActive(true);
         Time.timeScale = TimeScale;
         Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
-        while (Screen.gameObject.transform.localScale.y < 1)
+        while (Screen.gameObject.transform.localScale.y < Screen.gameObject.transform.localScale.x)
         {
-            Screen.gameObject.transform.localScale = Vector3.MoveTowards(Screen.gameObject.transform.localScale, new Vector3(1, 1, 1), ScreenGrowth);
+            Screen.gameObject.transform.localScale = Vector3.MoveTowards(Screen.gameObject.transform.localScale, new Vector3(Screen.gameObject.transform.localScale.x, Screen.gameObject.transform.localScale.x, Screen.gameObject.transform.localScale.x), ScreenGrowth);
             yield return new WaitForSeconds(SlideTime);
         }
         yield return new WaitForSeconds(WaitBeforeDestroy);
-        comet.CreatePoof();
-        while (comet.gameObject.transform.localScale.y > 0.001f)
+        comet.GetComponent<Attractor_Grav>().CreatePoof();
+        while (comet.transform.localScale.y > 0.001f)
         {
-            comet.gameObject.transform.localScale = Vector3.MoveTowards(comet.gameObject.transform.localScale, new Vector3(0.001f, 0.001f, 0.001f), CometShrink);
+            comet.transform.localScale = Vector3.MoveTowards(comet.transform.localScale, new Vector3(0.001f, 0.001f, 0.001f), CometShrink);
             yield return new WaitForSeconds(PoofTime);
         }
         CM.DestroyComet(MyIndex);

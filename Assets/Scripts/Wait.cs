@@ -16,8 +16,12 @@ public class Wait : MonoBehaviour
 
     IEnumerator Waiting()
     {
+        StoredKnowledge.StartTutorial = false;
+        StoredKnowledge.DoneTutorial = false;
+        StoredKnowledge.Played_Scene_1 = false;
+        StoredKnowledge.Played_Scene_2 = false;
+        StoredKnowledge.Played_Scene_3 = false;
         yield return new WaitForSeconds(timer);
-
         SceneManager.LoadScene(1);
     }
 }

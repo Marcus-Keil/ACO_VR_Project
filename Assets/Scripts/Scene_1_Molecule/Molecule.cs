@@ -2,6 +2,7 @@ using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Molecule : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class Molecule : MonoBehaviour
     private float DistanceModifier = 1.582f;
     public int MaxBonds;
     public List<Molecule> BondedMolecules;
+
+    public float DissolveTime = 0.01f;
+    public MaterialPropertyBlock MyMaterial;
     [SerializeField] private float magnitudeMax;
     [SerializeField] private float vibMag;
 
@@ -153,5 +157,30 @@ public class Molecule : MonoBehaviour
     private Vector3 NormDistance_Calc_Between(Vector3 Position_1, Vector3 Position_2)
     {
         return (Position_1 - Position_2) / Distance_Calc(Position_2);
+    }
+
+    public void InitiateDeath(bool sent=false)
+    {
+        if (sent)
+        {
+            StartCoroutine(DissolveKill());
+        }
+        if (BondedMolecules.Count == MaxBonds)
+        {
+            if (this.tag == "Oxygen")
+            {
+                BondedMolecules[0].InitiateDeath(true);
+                BondedMolecules[1].InitiateDeath(true);
+            }
+            StartCoroutine(DissolveKill());
+        }
+    }
+
+    IEnumerator DissolveKill()
+    {
+        float time = 0.1f;
+            time = 0.2f;
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
     }
 }

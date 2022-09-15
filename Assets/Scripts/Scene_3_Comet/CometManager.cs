@@ -69,10 +69,10 @@ public class CometManager : MonoBehaviour
                         SpawnComet();
                     }
                 }
-                else if (_LeftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool SpawnNotPressed) && !SpawnNotPressed)
-                {
-                    CometSpawnPressed = false;
-                }
+            }
+            else if (_LeftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool SpawnNotPressed) && !SpawnNotPressed)
+            {
+                CometSpawnPressed = false;
             }
         }
     }
@@ -87,7 +87,6 @@ public class CometManager : MonoBehaviour
 
     public void SpawnComet()
     {
-        Debug.Log("Comet Spawned");
         if (ActiveComets.Count < MaximumComets)
         {
             GameObject C = Instantiate<GameObject>(CometPrefab, ComLocation, Quaternion.identity);
@@ -99,17 +98,12 @@ public class CometManager : MonoBehaviour
     public void DestroyComet(int index_Comet = 0)
     {
         Attractor_Grav Com = ActiveComets[index_Comet];
+        Debug.Log(Com);
         if (Com != null)
         {
             Destroy(Com.gameObject);
             AllAttractors.Remove(Com);
             ActiveComets.Remove(Com);
         }
-        else
-        {
-            ActiveComets.Remove(Com);
-            AllAttractors.Remove(Com);
-        }
-
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class HandController : MonoBehaviour
 {
     ActionBasedController controller;
-    [SerializeField] Hand hand;
+    [SerializeField] ControllerScript hand;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +18,15 @@ public class HandController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hand.SetGrip(controller.selectAction.action.ReadValue<float>());
+        Debug.Log(controller.activateAction.action.ReadValue<float>());
         hand.SetTrigger(controller.activateAction.action.ReadValue<float>());
-        hand.SetThumb(controller.activateAction.action.ReadValue<float>());
+        if (StoredKnowledge.StartTutorial && !StoredKnowledge.DoneTutorial)
+        {
+            if (controller.activateAction.action.ReadValue<float>() > 0.5f)
+            {
+                StoredKnowledge.DoneTutorial = true;
+                StoredKnowledge.StartTutorial = false;
+            }
+        }
     }
 }
