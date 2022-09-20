@@ -15,6 +15,7 @@ public class CometManager : MonoBehaviour
     public Vector3 ComLocation = new Vector3(0.0f, 1.2f, -13.0f);
     public GameObject CometPrefab;
     public GameObject CometCollect;
+    public GameObject ButtonSphere;
 
     private InputDevice _RightController;
     private InputDevice _LeftController;
@@ -54,13 +55,24 @@ public class CometManager : MonoBehaviour
         {
             TryInitialize();
         }
-        else
+        else if (StoredKnowledge.StartTutorial_3 || StoredKnowledge.Start_Game_3)
         {
+
             if (_LeftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool SpawnPressed) && SpawnPressed)
             {
                 if (!CometSpawnPressed)
                 {
                     CometSpawnPressed = true;
+                    if (!StoredKnowledge.Start_Game_3)
+                    {
+                        StoredKnowledge.Start_Game_3 = true;
+                        if (ButtonSphere.activeSelf)
+                        {
+                            ButtonSphere.SetActive(false);
+                        }
+                        
+                    }
+
                     if (ActiveComets.Count < MaximumComets)
                         SpawnComet();
                     else

@@ -111,13 +111,12 @@ public class Attractor_Grav : MonoBehaviour
     public void CreatePoof()
     {
         GameObject C = Instantiate<GameObject>(Poof, this.transform.position, Quaternion.identity);
-        StartCoroutine(ExampleCoroutine(C));
+        StartCoroutine(PoofCoroutine(C));
     }
 
-    IEnumerator ExampleCoroutine(GameObject poof)
+    IEnumerator PoofCoroutine(GameObject poof)
     {
         yield return new WaitForSeconds(10.0f);
         Destroy(poof);
     }
-
 }

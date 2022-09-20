@@ -9,7 +9,6 @@ public class GoalPost : MonoBehaviour
     [SerializeField] Material GoalMat;
     public WaterScoreScript Score;
     public TimerScript TimerTxt;
-    public float WaitBeforeAnim = 120.0f;
 
     private Animator animator;
     private String animatorEnter = "Enter";
@@ -67,12 +66,5 @@ public class GoalPost : MonoBehaviour
     public void ExitOut()
     {
         animator.SetTrigger(animatorGoal);
-        DoneAudio.Play();
-    }
-
-    IEnumerator WaitCouroutine()
-    {
-        yield return new WaitForSeconds(WaitBeforeAnim);
-        EnterIn();
     }
 }

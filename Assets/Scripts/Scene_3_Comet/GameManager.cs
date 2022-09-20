@@ -42,10 +42,18 @@ public class GameManager : MonoBehaviour
 
     public void AnimateEarth(int MyIndex, GameObject comet)
     {
-        StartCoroutine(ExampleCoroutine(MyIndex, comet));
+        if (!StoredKnowledge.End_Game_3)
+        {
+            StartCoroutine(EarthAnimateCoroutine(MyIndex, comet));
+        }
+        else
+        {
+            comet.GetComponent<Attractor_Grav>().CreatePoof();
+            CM.DestroyComet(MyIndex);
+        }
     }
 
-    IEnumerator ExampleCoroutine(int MyIndex, GameObject comet)
+    IEnumerator EarthAnimateCoroutine(int MyIndex, GameObject comet)
     {
         Screen.gameObject.SetActive(true);
         Time.timeScale = TimeScale;
@@ -71,5 +79,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(WaitAfterDestroy);
         Time.timeScale = defaultTimeScale;
         Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
+        StoredKnowledge.End_Game_3 = true;
     }
 }

@@ -53,14 +53,12 @@ public class VR_Menu : MonoBehaviour
         }
         else
         {
-            if (!StoredKnowledge.DoneTutorial)
+            if (!StoredKnowledge.DoneTutorial_1 && StoredKnowledge.StartTutorial_1)
             {
-                if (StoredKnowledge.StartTutorial)
-                {
-                    StartCoroutine(WaitForKeyPress());
-                }
+                StartCoroutine(WaitForKeyPress());
             }
-            else {
+            else
+            { // if (StoredKnowledge.MenuUnlocked)
                 if (_LeftController.TryGetFeatureValue(UnityEngine.XR.CommonUsages.menuButton, out bool MenuPressed) && MenuPressed)
                 {
                     if (!MenuButtonPressed)
@@ -96,7 +94,7 @@ public class VR_Menu : MonoBehaviour
 
     IEnumerator WaitForKeyPress()
     {
-        while (!StoredKnowledge.DoneTutorial) // essentially a "while true", but with a bool to break out naturally
+        while (!StoredKnowledge.DoneTutorial_1) // essentially a "while true", but with a bool to break out naturally
         {
             yield return null; // wait until next frame, then continue execution from here (loop continues)
         }

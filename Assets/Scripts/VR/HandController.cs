@@ -18,14 +18,13 @@ public class HandController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(controller.activateAction.action.ReadValue<float>());
         hand.SetTrigger(controller.activateAction.action.ReadValue<float>());
-        if (StoredKnowledge.StartTutorial && !StoredKnowledge.DoneTutorial)
+        if (StoredKnowledge.StartTutorial_1 && !StoredKnowledge.DoneTutorial_1)
         {
             if (controller.activateAction.action.ReadValue<float>() > 0.5f)
             {
-                StoredKnowledge.DoneTutorial = true;
-                StoredKnowledge.StartTutorial = false;
+                StoredKnowledge.DoneTutorial_1 = true;
+                StoredKnowledge.StartTutorial_1 = false;
             }
         }
     }

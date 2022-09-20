@@ -34,13 +34,30 @@ public class MenuButton : MonoBehaviour
         if (SceneManager.GetActiveScene().name != Scene)
         {
             img.color = ClickedCol;
-            if (Scene != "Exit")
+            if (Scene != "Exit" && Scene != "Reset")
             {
                 SceneManager.LoadScene(Scene);
             }
             else if (Scene == "Exit")
             {
                 Application.Quit();
+            }
+            else if (Scene == "Reset")
+            {
+                StoredKnowledge.StartTutorial_1 = false; 
+                StoredKnowledge.DoneTutorial_1 = false; 
+                StoredKnowledge.End_Game_1 = false;
+                StoredKnowledge.Played_Scene_1 = false;
+                StoredKnowledge.StartTutorial_2 = false;
+                StoredKnowledge.Start_Game_2 = false;
+                StoredKnowledge.End_Game_2 = false;
+                StoredKnowledge.Played_Scene_2 = false;
+                StoredKnowledge.StartTutorial_3 = false;
+                StoredKnowledge.Start_Game_3 = false;
+                StoredKnowledge.End_Game_3 = false;
+                StoredKnowledge.Played_Scene_3 = false;
+                StoredKnowledge.MenuUnlocked = false;
+                SceneManager.LoadScene("SplashScene");
             }
             img.color = Color.gray;
         }
