@@ -17,7 +17,6 @@ public class Molecule : MonoBehaviour
     public List<Molecule> BondedMolecules;
 
     public float DissolveTime = 0.01f;
-    public MaterialPropertyBlock MyMaterial;
     [SerializeField] private float magnitudeMax;
     [SerializeField] private float vibMag;
 
@@ -178,8 +177,7 @@ public class Molecule : MonoBehaviour
 
     IEnumerator DissolveKill()
     {
-        float time = 0.1f;
-            time = 0.2f;
+        float time = 0.2f;
         yield return new WaitForSeconds(time);
         Destroy(gameObject);
     }

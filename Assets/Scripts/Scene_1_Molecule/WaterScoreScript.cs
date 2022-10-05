@@ -20,4 +20,9 @@ public class WaterScoreScript : MonoBehaviour
         CurrentScore += 1;
         Score.text = string.Format("{0}", CurrentScore);
     }
+
+    public int GetScore()
+    {
+        return CurrentScore;
+    }
 }

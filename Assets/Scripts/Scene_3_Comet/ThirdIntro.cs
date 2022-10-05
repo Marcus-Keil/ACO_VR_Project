@@ -10,11 +10,18 @@ public class ThirdIntro : MonoBehaviour
     public GameObject ButtonSphere;
     public GameObject MenuSphere;
 
+    public Material LHand;
+    public Material RHand;
+    public float slideDelta = 0.01f;
+    public float slideTime = 0.01f;
+
     public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        RHand.SetFloat("_Dissolve", 1);
+        LHand.SetFloat("_Dissolve", 1);
         if (StoredKnowledge.MenuUnlocked)
         {
             MenuSphere.SetActive(true);
@@ -38,10 +45,40 @@ public class ThirdIntro : MonoBehaviour
         }
     }
 
+    public void MaterialiseHands()
+    {
+        StartCoroutine(ResolveHands());
+    }
+
+    public void DematerialiseHands()
+    {
+        StartCoroutine(DissolveHands());
+    }
+
+    IEnumerator ResolveHands()
+    {
+        while (RHand.GetFloat("_Dissolve") > 0)
+        {
+            RHand.SetFloat("_Dissolve", Mathf.MoveTowards(RHand.GetFloat("_Dissolve"), 0, slideDelta));
+            LHand.SetFloat("_Dissolve", Mathf.MoveTowards(LHand.GetFloat("_Dissolve"), 0, slideDelta));
+            yield return new WaitForSeconds(slideTime);
+        }
+    }
+
+    IEnumerator DissolveHands()
+    {
+        while (RHand.GetFloat("_Dissolve") < 1)
+        {
+            RHand.SetFloat("_Dissolve", Mathf.MoveTowards(RHand.GetFloat("_Dissolve"), 1, slideDelta));
+            LHand.SetFloat("_Dissolve", Mathf.MoveTowards(LHand.GetFloat("_Dissolve"), 1, slideDelta));
+            yield return new WaitForSeconds(slideTime);
+        }
+    }
+
     public void PlayScene3Intro()
     {
         StartCoroutine(Wait());
-        anim.Play("Base Layer.New Animation", 0, 0.5f);
+        anim.Play("Dust Scene Intro");
         StartCoroutine(WaitForIntroSpeech(Scene3IntroSpeach));
     }
 

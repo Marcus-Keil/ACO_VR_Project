@@ -9,11 +9,19 @@ public class SecondIntro : MonoBehaviour
     public AudioSource Scene2EndSpeach;
     public GameObject MenuSphere;
 
+    public Material LHand;
+    public Material RHand;
+    public float slideDelta = 0.01f;
+    public float slideTime = 0.01f;
+
     public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        RHand.SetFloat("_Dissolve", 1);
+        LHand.SetFloat("_Dissolve", 1);
+
         if (StoredKnowledge.MenuUnlocked)
         {
             MenuSphere.SetActive(true);
@@ -34,21 +42,46 @@ public class SecondIntro : MonoBehaviour
         }
     }
 
-    public void PlayScene2Intro()
+    public void MaterialiseHands()
     {
-        StartCoroutine(Wait());
-        anim.Play("Base Layer.New Animation", 0, 0.5f);
-        StartCoroutine(WaitForIntroSpeech(Scene2IntroSpeach));
+        StartCoroutine(ResolveHands());
     }
 
-    IEnumerator Wait()
+    public void DematerialiseHands()
     {
-        yield return new WaitForSeconds(5.0f);
+        StartCoroutine(DissolveHands());
+    }
+
+    IEnumerator ResolveHands()
+    {
+        while (RHand.GetFloat("_Dissolve") > 0)
+        {
+            RHand.SetFloat("_Dissolve", Mathf.MoveTowards(RHand.GetFloat("_Dissolve"), 0, slideDelta));
+            LHand.SetFloat("_Dissolve", Mathf.MoveTowards(LHand.GetFloat("_Dissolve"), 0, slideDelta));
+            yield return new WaitForSeconds(slideTime);
+        }
+    }
+
+    IEnumerator DissolveHands()
+    {
+        while (RHand.GetFloat("_Dissolve") < 1)
+        {
+            RHand.SetFloat("_Dissolve", Mathf.MoveTowards(RHand.GetFloat("_Dissolve"), 1, slideDelta));
+            LHand.SetFloat("_Dissolve", Mathf.MoveTowards(LHand.GetFloat("_Dissolve"), 1, slideDelta));
+            yield return new WaitForSeconds(slideTime);
+        }
+    }
+
+    public void PlayScene2Intro()
+    {
+        StartCoroutine(WaitForIntroSpeech(Scene2IntroSpeach));
     }
 
     IEnumerator WaitForIntroSpeech(AudioSource source)
     {
+        yield return new WaitForSeconds(1.5f);
         source.Play();
+        anim.Play("Dust Scene Intro");
         yield return new WaitWhile(() => source.isPlaying);
         StoredKnowledge.Start_Game_2 = true;
     }
