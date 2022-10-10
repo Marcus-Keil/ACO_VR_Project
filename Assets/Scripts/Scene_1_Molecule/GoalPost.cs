@@ -9,11 +9,10 @@ public class GoalPost : MonoBehaviour
     [SerializeField] Material GoalMat;
     public WaterScoreScript Score;
     public TimerScript TimerTxt;
-    public int MaxScore = 5;
 
     private Animator animator;
-    private String animatorEnter = "Enter";
-    private String animatorGoal = "Finish";
+    private string animatorEnter = "Enter";
+    private string animatorGoal = "Finish";
     private bool Entered = false;
 
     public AudioSource StartAudio;
@@ -47,10 +46,6 @@ public class GoalPost : MonoBehaviour
                     GoalAudio.pitch = UnityEngine.Random.Range(0.8f, 1.1f);
                     GoalAudio.Play();
                     otherMol.InitiateDeath();
-                    if (Score.GetComponent<WaterScoreScript>().GetScore() >= MaxScore)
-                    {
-                        GoalAudio.Play();
-                    }
                 }
             }
 

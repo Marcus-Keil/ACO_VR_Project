@@ -13,9 +13,12 @@ public class TimerScript : MonoBehaviour
 
     public TextMeshProUGUI TimerTxt;
     public GameObject GoalPost;
+    public WaterScoreScript Score;
+    public int MaxScore = 5;
 
     void Start()
     {
+        StoredKnowledge.Succeeded_1 = false;
         GoalPost = GameObject.Find("GoalPost");
         float minutes = Mathf.FloorToInt(TimeLeft / 60);
         float seconds = Mathf.FloorToInt(TimeLeft % 60);
@@ -27,10 +30,17 @@ public class TimerScript : MonoBehaviour
     {
         if (TimerOn)
         {
-            if(TimeLeft > 0)
+            if(TimeLeft > 0 && Score.GetComponent<WaterScoreScript>().GetScore() < MaxScore)
             {
                 TimeLeft -= Time.deltaTime;
                 updateTimer(TimeLeft);
+            }
+            else if (TimeLeft > 0 && Score.GetComponent<WaterScoreScript>().GetScore() >= MaxScore)
+            {
+                TimerOn = false;
+                GoalPost.GetComponent<GoalPost>().ExitOut();
+                StoredKnowledge.Succeeded_1 = true;
+                StoredKnowledge.End_Game_1 = true;
             }
             else
             {

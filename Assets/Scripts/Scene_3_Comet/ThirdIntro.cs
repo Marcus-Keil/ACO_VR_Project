@@ -16,12 +16,14 @@ public class ThirdIntro : MonoBehaviour
     public float slideTime = 0.01f;
 
     public Animator anim;
+    public Animator CloudAnim;
 
     // Start is called before the first frame update
     void Start()
     {
         RHand.SetFloat("_Dissolve", 1);
         LHand.SetFloat("_Dissolve", 1);
+        CloudAnim.SetBool("HasCollapsed", true);
         if (StoredKnowledge.MenuUnlocked)
         {
             MenuSphere.SetActive(true);
@@ -40,8 +42,7 @@ public class ThirdIntro : MonoBehaviour
     {
         if (StoredKnowledge.End_Game_3 && !StoredKnowledge.Played_Scene_3)
         {
-            StoredKnowledge.Played_Scene_3 = true;
-            StartCoroutine(WaitForEndSpeech(Scene3EndSpeach));
+            PlayOutro3();
         }
     }
 
@@ -78,8 +79,13 @@ public class ThirdIntro : MonoBehaviour
     public void PlayScene3Intro()
     {
         StartCoroutine(Wait());
-        anim.Play("Dust Scene Intro");
-        StartCoroutine(WaitForIntroSpeech(Scene3IntroSpeach));
+        StartCoroutine(WaitForIntroSpeech());
+    }
+
+    public void PlayOutro3()
+    {
+        StoredKnowledge.Played_Scene_3 = true;
+        StartCoroutine(WaitForEndSpeech());
     }
 
     IEnumerator Wait()
@@ -87,18 +93,21 @@ public class ThirdIntro : MonoBehaviour
         yield return new WaitForSeconds(5.0f);
     }
 
-    IEnumerator WaitForIntroSpeech(AudioSource source)
+    IEnumerator WaitForIntroSpeech()
     {
-        source.Play();
-        yield return new WaitWhile(() => source.isPlaying);
+        Scene3IntroSpeach.Play();
+        CloudAnim.SetTrigger("Blow");
+        CloudAnim.SetBool("HasCollapsed", true);
+        yield return new WaitWhile(() => Scene3IntroSpeach.isPlaying);
         StoredKnowledge.StartTutorial_3 = true;
         ButtonSphere.SetActive(true);
     }
-    IEnumerator WaitForEndSpeech(AudioSource source)
+    IEnumerator WaitForEndSpeech()
     {
         ButtonSphere.SetActive(false);
         MenuSphere.SetActive(true);
-        yield return new WaitWhile(() => source.isPlaying);
+        Scene3EndSpeach.Play();
+        yield return new WaitWhile(() => Scene3EndSpeach.isPlaying);
         StoredKnowledge.MenuUnlocked = true;
     }
 }

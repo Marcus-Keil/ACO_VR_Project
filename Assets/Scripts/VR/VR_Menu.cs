@@ -80,14 +80,13 @@ public class VR_Menu : MonoBehaviour
         if (menu_cube.activeInHierarchy)
         {
             menu_cube.SetActive(false);
-            Time.timeScale = TimeScale;
+            Time.timeScale = defaultTimeScale;
             Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
         }
         else if (!menu_cube.activeInHierarchy)
         {
             menu_cube.SetActive(true);
-
-            Time.timeScale = defaultTimeScale;
+            Time.timeScale = TimeScale;
             Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
         }
     }

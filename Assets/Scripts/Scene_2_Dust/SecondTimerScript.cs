@@ -34,7 +34,6 @@ public class SecondTimerScript : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time is UP!");
                 TimeLeft = 0;
                 StoredKnowledge.End_Game_2 = true;
                 TimerOn = false;

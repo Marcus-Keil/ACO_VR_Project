@@ -756,4 +756,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerSpeed: 10
   TutorialGlowBool: 0
+  GlowSphere: {fileID: 0}
   duration: 10

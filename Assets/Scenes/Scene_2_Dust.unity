@@ -1218,7 +1218,7 @@ PrefabInstance:
     - target: {fileID: 6290992992619603030, guid: c8deec06406c55f47a8afe01b62d4b4c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.367
+      value: -1.372
       objectReference: {fileID: 0}
     - target: {fileID: 6290992992619603030, guid: c8deec06406c55f47a8afe01b62d4b4c,
         type: 3}
@@ -1228,7 +1228,7 @@ PrefabInstance:
     - target: {fileID: 6290992992619603030, guid: c8deec06406c55f47a8afe01b62d4b4c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.575
+      value: 1.039
       objectReference: {fileID: 0}
     - target: {fileID: 6290992992619603030, guid: c8deec06406c55f47a8afe01b62d4b4c,
         type: 3}
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3819bbb0f19ab458f0661608fc1739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLeft: 90
+  TimeLeft: 10
   TimerOn: 0
   TimerTxt: {fileID: 5470084034665566125}
   CollisionManager: {fileID: 336784380}

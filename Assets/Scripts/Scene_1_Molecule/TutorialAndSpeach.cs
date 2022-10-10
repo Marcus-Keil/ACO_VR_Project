@@ -8,6 +8,7 @@ public class TutorialAndSpeach : MonoBehaviour
     public AudioSource Introduction;
     public AudioSource PostTutorial;
     public AudioSource EndChallenge;
+    public AudioSource FailChallenge;
     public AudioSource EndSpeach;
 
     public GameObject Dispensers;
@@ -18,17 +19,18 @@ public class TutorialAndSpeach : MonoBehaviour
 
     public Material LHand;
     public Material RHand;
-    public float slideDelta = 0.01f;
-    public float slideTime = 0.01f;
+    public float slideDelta = 0.1f;
+    public float slideTime = 1.0f;
 
     public Animator anim;
+    public Animator FadeAnim;
 
     private bool OutroPlayed = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        Dispensers.gameObject.transform.localScale = new Vector3(0,0,0);
+        Dispensers.gameObject.transform.localScale = new Vector3(0.1f,0.1f,0.1f);
         RHand.SetFloat("_Dissolve", 1);
         LHand.SetFloat("_Dissolve", 1);
 
@@ -119,6 +121,7 @@ public class TutorialAndSpeach : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         Introduction.Play();
+        yield return new WaitForSeconds(0.5f);
         anim.Play("Tutorial Scene");
         yield return new WaitWhile(() => Introduction.isPlaying);
         ActivateOrbs();
@@ -136,7 +139,7 @@ public class TutorialAndSpeach : MonoBehaviour
         anim.Play("Post_Tutorial");
         while (Dispensers.gameObject.transform.localScale.x < 1)
         {
-            Dispensers.gameObject.transform.localScale = Vector3.MoveTowards(new Vector3(1,1,1), Dispensers.gameObject.transform.localScale, slideDelta);
+            Dispensers.gameObject.transform.localScale = Vector3.MoveTowards(Dispensers.gameObject.transform.localScale, new Vector3(1, 1, 1), slideDelta);
             yield return new WaitForSeconds(slideTime);
         }
         yield return new WaitWhile(() => PostTutorial.isPlaying);
@@ -161,12 +164,22 @@ public class TutorialAndSpeach : MonoBehaviour
 
     IEnumerator WaitForOutroAudioFinish()
     {
-        EndChallenge.Play();
-        yield return new WaitWhile(() => EndChallenge.isPlaying);
+        if (StoredKnowledge.Succeeded_1)
+        {
+            EndChallenge.Play();
+            yield return new WaitWhile(() => EndChallenge.isPlaying);
+        }
+        else
+        {
+            FailChallenge.Play();
+            yield return new WaitWhile(() => FailChallenge.isPlaying);
+        }
         EndSpeach.Play();
         yield return new WaitWhile(() => EndSpeach.isPlaying);
         StoredKnowledge.Played_Scene_1 = true;
-        yield return new WaitForSeconds(5.0f);
-        SceneManager.LoadScene("Scene_2_Dust");
+        yield return new WaitForSeconds(2.0f);
+        FadeAnim.SetTrigger("Fade_Out");
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene("Movie_2");
     }
 }

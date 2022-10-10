@@ -25,10 +25,12 @@ public class SecondIntro : MonoBehaviour
         if (StoredKnowledge.MenuUnlocked)
         {
             MenuSphere.SetActive(true);
+            StoredKnowledge.Played_Scene_2 = false;
         }
         if (!StoredKnowledge.Played_Scene_2)
         {
             PlayScene2Intro();
+            StoredKnowledge.Played_Scene_2 = false;
         }
     }
 
@@ -37,8 +39,7 @@ public class SecondIntro : MonoBehaviour
     {
         if (StoredKnowledge.End_Game_2 && !StoredKnowledge.Played_Scene_2)
         {
-            StartCoroutine(WaitForEndSpeech(Scene2EndSpeach));
-
+            PlayEndScene2();
         }
     }
 
@@ -74,22 +75,27 @@ public class SecondIntro : MonoBehaviour
 
     public void PlayScene2Intro()
     {
-        StartCoroutine(WaitForIntroSpeech(Scene2IntroSpeach));
+        StartCoroutine(WaitForIntroSpeech());
     }
 
-    IEnumerator WaitForIntroSpeech(AudioSource source)
+    public void PlayEndScene2()
+    {
+        StoredKnowledge.Played_Scene_2 = true;
+        StartCoroutine(WaitForEndSpeech());
+    }
+
+    IEnumerator WaitForIntroSpeech()
     {
         yield return new WaitForSeconds(1.5f);
-        source.Play();
+        Scene2IntroSpeach.Play();
         anim.Play("Dust Scene Intro");
-        yield return new WaitWhile(() => source.isPlaying);
+        yield return new WaitWhile(() => Scene2IntroSpeach.isPlaying);
         StoredKnowledge.Start_Game_2 = true;
     }
-    IEnumerator WaitForEndSpeech(AudioSource source)
+    IEnumerator WaitForEndSpeech()
     {
-        source.Play();
-        yield return new WaitWhile(() => source.isPlaying);
-        StoredKnowledge.Played_Scene_2 = true;
+        Scene2EndSpeach.Play();
+        yield return new WaitWhile(() => Scene2EndSpeach.isPlaying);
         yield return new WaitForSeconds(2.0f);
         SceneManager.LoadScene("Scene_3_Comet");
     }
