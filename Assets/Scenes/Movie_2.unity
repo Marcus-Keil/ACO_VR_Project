@@ -539,7 +539,6 @@ GameObject:
   m_Component:
   - component: {fileID: 513582866}
   - component: {fileID: 513582868}
-  - component: {fileID: 513582867}
   m_Layer: 0
   m_Name: PlaneOfRotation
   m_TagString: Untagged
@@ -564,19 +563,6 @@ Transform:
   m_Father: {fileID: 1704869480}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -45, y: 0, z: 0}
---- !u!114 &513582867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513582865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a6e9dca5f9b9c4582abafa62a8879e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeAnim: {fileID: 1671435360}
 --- !u!95 &513582868
 Animator:
   serializedVersion: 4
@@ -1022,9 +1008,19 @@ PrefabInstance:
       objectReference: {fileID: 233898691}
     - target: {fileID: 1720422245852256265, guid: 23022ec1a10d8804db73061065e84286,
         type: 3}
+      propertyPath: FadeAnim
+      value: 
+      objectReference: {fileID: 1671435360}
+    - target: {fileID: 1720422245852256265, guid: 23022ec1a10d8804db73061065e84286,
+        type: 3}
       propertyPath: SunLight
       value: 
       objectReference: {fileID: 233898690}
+    - target: {fileID: 1720422245852256265, guid: 23022ec1a10d8804db73061065e84286,
+        type: 3}
+      propertyPath: PlaneAnim
+      value: 
+      objectReference: {fileID: 513582868}
     - target: {fileID: 1720422245852256265, guid: 23022ec1a10d8804db73061065e84286,
         type: 3}
       propertyPath: CloudAnimator

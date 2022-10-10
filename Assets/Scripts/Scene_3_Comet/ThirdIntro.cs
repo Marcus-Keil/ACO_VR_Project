@@ -23,7 +23,7 @@ public class ThirdIntro : MonoBehaviour
     {
         RHand.SetFloat("_Dissolve", 1);
         LHand.SetFloat("_Dissolve", 1);
-        CloudAnim.SetBool("HasCollapsed", true);
+        CloudAnim.SetBool("CometScene", true);
         if (StoredKnowledge.MenuUnlocked)
         {
             MenuSphere.SetActive(true);
@@ -96,8 +96,7 @@ public class ThirdIntro : MonoBehaviour
     IEnumerator WaitForIntroSpeech()
     {
         Scene3IntroSpeach.Play();
-        CloudAnim.SetTrigger("Blow");
-        CloudAnim.SetBool("HasCollapsed", true);
+        //CloudAnim.SetTrigger("Blow");
         yield return new WaitWhile(() => Scene3IntroSpeach.isPlaying);
         StoredKnowledge.StartTutorial_3 = true;
         ButtonSphere.SetActive(true);

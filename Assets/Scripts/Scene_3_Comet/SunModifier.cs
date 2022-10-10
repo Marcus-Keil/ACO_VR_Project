@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class SunModifier : MonoBehaviour
@@ -27,14 +28,17 @@ public class SunModifier : MonoBehaviour
     private float LightScaleDif = 1000f;
 
     public Animator CloudAnimator;
+    public Animator FadeAnim;
+    public Animator PlaneAnim;
     // Start is called before the first frame update
     void Start()
     {
-        Sun.transform.localScale = new Vector3(0.08f,0.08f,0.08f);
-        SunLight.intensity = 0.00000001f;
-        SunMaterial.SetColor("_EmissionColor", BaseColor* CurrentMatIntens);
-
-        CloudAnimator.SetTrigger("Collaps");
+        if (SceneManager.GetActiveScene().name == "Movie_2")
+        {
+            Sun.transform.localScale = new Vector3(0.08f, 0.08f, 0.08f);
+            SunLight.intensity = 0.00000001f;
+            SunMaterial.SetColor("_EmissionColor", BaseColor * CurrentMatIntens);
+        }
     }
 
     private void Update()
@@ -110,5 +114,23 @@ public class SunModifier : MonoBehaviour
     public void HasBlown()
     {
         CloudAnimator.SetBool("HasBlown", true);
+    }
+
+    public void PlaneZoom()
+    {
+        PlaneAnim.SetTrigger("Zoom");
+    }
+
+    public void Fade(string scene)
+    {
+        StartCoroutine(FadeAndScene(scene));
+    }
+
+    IEnumerator FadeAndScene(string scene)
+    { 
+        yield return new WaitForSeconds(1.0f);
+        FadeAnim.SetTrigger("Fade_Out");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(scene);
     }
 }

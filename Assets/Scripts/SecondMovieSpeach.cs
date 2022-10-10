@@ -29,7 +29,7 @@ public class SecondMovieSpeach : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         SecondMovieSpeachAudio.Play();
-        CloudAnim.SetTrigger("Collapse");
+        CloudAnim.SetTrigger("Collaps");
         yield return new WaitWhile(() => SecondMovieSpeachAudio.isPlaying);
     }
 }
